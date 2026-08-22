@@ -14,19 +14,28 @@ async def broadcast(bot, message):
         return await message.reply_text("⚠️ **Error:** Please reply to a message to broadcast it.")
 
     users = await db.get_all_users()
-    sts = await message.reply_text('⏳ **Preparing User Broadcast...**')
+    groups = await db.get_all_chats()
+
+    sts = await message.reply_text('⏳ **Preparing Broadcast for Users & Groups...**')
     
     start_time = time.time()
     total_users = await db.total_users_count()
+    total_groups = await db.total_chat_count()
     
-    if total_users == 0:
-        return await sts.edit("❌ **No users found in the database.**")
+    if total_users == 0 and total_groups == 0:
+        return await sts.edit("❌ **No users or groups found in the database.**")
 
-    done = 0
-    blocked = 0
-    deleted = 0
-    failed = 0
-    success = 0
+    # Variables for User Stats
+    u_done = 0
+    u_blocked = 0
+    u_deleted = 0
+    u_failed = 0
+    u_success = 0
+
+    # Variables for Group Stats
+    g_done = 0
+    g_success = 0
+    g_deleted = 0
 
     btn = InlineKeyboardMarkup(
         [
@@ -34,53 +43,97 @@ async def broadcast(bot, message):
         ]
     )
 
-    async for user in users:
-        pti, sh = await broadcast_messages(int(user['id']), b_msg, reply_markup=btn)
-        if pti:
-            success += 1
-        elif pti == False:
-            if sh == "Blocked":
-                blocked += 1
-            elif sh == "Deleted":
-                deleted += 1
-            elif sh == "Error":
-                failed += 1
+    # ==========================
+    # 1. Broadcasting to Users
+    # ==========================
+    if total_users > 0:
+        async for user in users:
+            pti, sh = await broadcast_messages(int(user['id']), b_msg, reply_markup=btn)
+            if pti:
+                u_success += 1
+            elif pti == False:
+                if sh == "Blocked":
+                    u_blocked += 1
+                elif sh == "Deleted":
+                    u_deleted += 1
+                elif sh == "Error":
+                    u_failed += 1
                 
-        done += 1
-        
-        # Update progress bar every 20 users or at the very end
-        if done % 20 == 0 or done == total_users:
-            percent = (done / total_users) * 100
-            filled_blocks = int((done / total_users) * 20)
-            bar = '█' * filled_blocks + '░' * (20 - filled_blocks)
+            u_done += 1
             
-            progress_text = (
-                f"📡 **User Broadcast In Progress**\n\n"
-                f"`[{bar}] {percent:.1f}%`\n\n"
-                f"**Total Users:** `{total_users}`\n"
-                f"**Completed:** `{done}`\n"
-                f"**Success:** `{success}`\n"
-                f"**Blocked:** `{blocked}`\n"
-                f"**Deleted:** `{deleted}`"
-            )
-            try:
-                await sts.edit(progress_text)
-            except FloodWait as e:
-                await asyncio.sleep(e.value)
-            except Exception:
-                pass 
+            # Update progress for Users
+            if u_done % 20 == 0 or u_done == total_users:
+                percent = (u_done / total_users) * 100
+                filled_blocks = int((u_done / total_users) * 20)
+                bar = '█' * filled_blocks + '░' * (20 - filled_blocks)
+                
+                progress_text = (
+                    f"📡 **User Broadcast In Progress**\n\n"
+                    f"`[{bar}] {percent:.1f}%`\n\n"
+                    f"**Completed:** `{u_done}/{total_users}`"
+                )
+                try:
+                    await sts.edit(progress_text)
+                except FloodWait as e:
+                    await asyncio.sleep(e.value)
+                except Exception:
+                    pass 
+
+    # ==========================
+    # 2. Broadcasting to Groups
+    # ==========================
+    if total_groups > 0:
+        async for group in groups:
+            chat_id = int(group['id'])
+            pti, sh, ex = await broadcast_messages_group(chat_id, b_msg)
+            
+            if pti:
+                g_success += 1
+            else:
+                if sh == "deleted":
+                    g_deleted += 1 
+                    try:
+                        await bot.leave_chat(chat_id)
+                    except Exception:
+                        pass 
+            g_done += 1
+            
+            # Update progress for Groups
+            if g_done % 20 == 0 or g_done == total_groups:
+                percent = (g_done / total_groups) * 100
+                filled_blocks = int((g_done / total_groups) * 20)
+                bar = '█' * filled_blocks + '░' * (20 - filled_blocks)
+                
+                progress_text = (
+                    f"📡 **Group Broadcast In Progress**\n\n"
+                    f"`[{bar}] {percent:.1f}%`\n\n"
+                    f"**Completed:** `{g_done}/{total_groups}`"
+                )
+                try:
+                    await sts.edit(progress_text)
+                except FloodWait as e:
+                    await asyncio.sleep(e.value)
+                except Exception:
+                    pass 
                 
     time_taken = datetime.timedelta(seconds=int(time.time()-start_time))
     await sts.delete()
+    
+    # Final Report
     await bot.send_message(
         message.chat.id, 
-        f"✅ **User Broadcast Completed**\n\n"
+        f"✅ **Broadcast Completed Successfully!**\n\n"
         f"⏱ **Time Taken:** `{time_taken}`\n\n"
-        f"📊 **Total Users:** `{total_users}`\n"
-        f"✅ **Success:** `{success}`\n"
-        f"🚫 **Blocked:** `{blocked}`\n"
-        f"🗑 **Deleted:** `{deleted}`\n"
-        f"❌ **Failed:** `{failed}`"
+        f"👤 **USER STATS:**\n"
+        f"┣ 📊 **Total Users:** `{total_users}`\n"
+        f"┣ ✅ **Success:** `{u_success}`\n"
+        f"┣ 🚫 **Blocked:** `{u_blocked}`\n"
+        f"┣ 🗑 **Deleted:** `{u_deleted}`\n"
+        f"┗ ❌ **Failed:** `{u_failed}`\n\n"
+        f"👥 **GROUP STATS:**\n"
+        f"┣ 📊 **Total Groups:** `{total_groups}`\n"
+        f"┣ ✅ **Success:** `{g_success}`\n"
+        f"┗ 🗑 **Removed/Failed:** `{g_deleted}`"
     )
 
 
@@ -143,86 +196,6 @@ async def remove_junkuser__db(bot, message):
         f"🚫 **Removed Blocked:** `{blocked}`\n"
         f"🗑 **Removed Deleted:** `{deleted}`"
     )
-
-
-@Client.on_message(filters.command("group_broadcast") & filters.user(ADMINS))
-async def broadcast_group(bot, message):
-    b_msg = message.reply_to_message
-    if not b_msg:
-        return await message.reply_text("⚠️ **Error:** Please reply to a message to broadcast it to groups.")
-
-    groups = await db.get_all_chats()
-    sts = await message.reply_text('⏳ **Preparing Group Broadcast...**')
-    
-    start_time = time.time()
-    total_groups = await db.total_chat_count()
-    
-    if total_groups == 0:
-        return await sts.edit("❌ **No groups found in the database.**")
-
-    done = 0
-    failed_reasons = ""
-    success = 0
-    deleted = 0
-    
-    async for group in groups:
-        chat_id = int(group['id'])
-        pti, sh, ex = await broadcast_messages_group(chat_id, b_msg)
-        
-        if pti:
-            success += 1
-        else:
-            if sh == "deleted":
-                deleted += 1 
-                failed_reasons += f"ID {chat_id}: {ex}" 
-                try:
-                    await bot.leave_chat(chat_id)
-                except Exception:
-                    pass 
-                
-        done += 1
-        
-        if done % 20 == 0 or done == total_groups:
-            percent = (done / total_groups) * 100
-            filled_blocks = int((done / total_groups) * 20)
-            bar = '█' * filled_blocks + '░' * (20 - filled_blocks)
-            
-            progress_text = (
-                f"📡 **Group Broadcast In Progress**\n\n"
-                f"`[{bar}] {percent:.1f}%`\n\n"
-                f"**Total Groups:** `{total_groups}`\n"
-                f"**Completed:** `{done}`\n"
-                f"**Success:** `{success}`\n"
-                f"**Removed:** `{deleted}`"
-            )
-            try:
-                await sts.edit(progress_text)
-            except FloodWait as e:
-                await asyncio.sleep(e.value)
-            except Exception:
-                pass 
-                
-    time_taken = datetime.timedelta(seconds=int(time.time() - start_time))
-    await sts.delete()
-    
-    final_text = (
-        f"✅ **Group Broadcast Completed**\n\n"
-        f"⏱ **Time Taken:** `{time_taken}`\n\n"
-        f"📊 **Total Groups:** `{total_groups}`\n"
-        f"✅ **Success:** `{success}`\n"
-        f"❌ **Removed/Failed:** `{deleted}`"
-    )
-    
-    if failed_reasons:
-        try:
-            await message.reply_text(f"{final_text}\n\n**Failure Reasons (Preview):**\n`{failed_reasons[:1000]}`")
-        except MessageTooLong:
-            with open('group_reasons.txt', 'w+') as outfile:
-                outfile.write(failed_reasons)
-            await message.reply_document('group_reasons.txt', caption=final_text)
-            os.remove("group_reasons.txt")
-    else:
-        await message.reply_text(final_text)
 
 
 @Client.on_message(filters.command(["junk_group", "clear_junk_group"]) & filters.user(ADMINS))
