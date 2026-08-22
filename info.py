@@ -32,7 +32,6 @@ PICS = (environ.get('PICS', 'https://files.catbox.moe/6kh85c.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/60e8a622b14796e4448ce.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
-SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://files.catbox.moe/ce96vj.jpg'))
 FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c3d8.jpg https://files.catbox.moe/wktt8l.jpg')).split()  # Fsub pic
 
 # ============================
@@ -43,7 +42,6 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002155804090'))  # Log channel id (make sure bot is admin)
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1003910381589'))  # Bin channel id (make sure bot is admin)
 FTMBOTZX_MOVIE_UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', '-1002227367557'))  # Notification of those who verify will be sent to your channel
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002155804090'))  # Premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '-1002227367557')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1003648004418').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1003867756570')  # Support group id (make sure bot is admin)
@@ -56,13 +54,6 @@ MAGIC_FORCE_SUB = {
     -1001957497326: "request"
 }
 
-
-
-# ============================
-# Payment Configuration
-# ============================
-QR_CODE = environ.get('QR_CODE', 'https://files.catbox.moe/8c1yep.jpg')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'shivashish-kumar@ptyes')
 
 # ============================
 # MongoDB Configuration
@@ -110,7 +101,6 @@ OWNERID = int(os.environ.get('OWNERID', '8418584090'))  # Replace with the actua
 # ============================
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
 
 # ============================
 # Miscellaneous Configuration
@@ -227,11 +217,7 @@ commands = [
 • /deletefiles - <code>ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD ғɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
 • /send - <code>ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴜꜱᴇʀ.</code>""",
 
-    """• /add_premium - <code>ᴀᴅᴅ ᴀɴʏ ᴜꜱᴇʀ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ.</code>
-• /remove_premium - <code>ʀᴇᴍᴏᴠᴇ ᴀɴʏ ᴜꜱᴇʀ ꜰʀᴏᴍ ᴘʀᴇᴍɪᴜᴍ.</code>
-• /premium_users - <code>ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ.</code>
-• /get_premium - <code>ɢᴇᴛ ɪɴꜰᴏ ᴏꜰ ᴀɴʏ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ.</code>
-• /restart - <code>ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.</code>"""
+    """• /restart - <code>ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.</code>"""
 ]
 
 
