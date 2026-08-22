@@ -61,7 +61,9 @@ from Script import script
 from datetime import date, datetime 
 import pytz
 from aiohttp import web
-from plugins import web_server, check_expired_premium
+
+# 👇 प्रीमियम हटा दिया गया है, इसलिए check_expired_premium रिमूव कर दिया
+from plugins import web_server 
 
 import asyncio
 from pyrogram import idle
@@ -72,7 +74,13 @@ botStartTime = time.time()
 
 ppath = "plugins/*.py"
 files = glob.glob(ppath)
-loop = asyncio.get_event_loop()
+
+# 👇 Event Loop Warning Fix
+try:
+    loop = asyncio.get_running_loop()
+except RuntimeError:
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
 
 async def Ftmbotzx_start():
     try:
@@ -141,8 +149,9 @@ async def Ftmbotzx_start():
         temp.B_LINK = me.mention
         FtmbotzxBot.username = '@' + me.username
 
-        logger.info("⏰ Starting premium check task...")
-        FtmbotzxBot.loop.create_task(check_expired_premium(FtmbotzxBot))
+        # 👇 यहाँ से प्रीमियम चेक वाला कोड हटा दिया गया है
+        # logger.info("⏰ Starting premium check task...")
+        # FtmbotzxBot.loop.create_task(check_expired_premium(FtmbotzxBot))
 
         logger.info(f"🎯 JɪᴏSᴛᴀʀ Mᴏᴠɪᴇs Hᴜʙ Bot v5.0.2025 with Pyrogram v2.3.45 (Layer 187) started successfully!")
         logger.info("📊 Configuration Summary:")
