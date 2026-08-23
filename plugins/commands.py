@@ -17,7 +17,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import *
 from database.ia_filterdb import Media, Media2, get_file_details, unpack_new_file_id, get_bad_files
 from database.users_chats_db import db, delete_all_msg
-from info import CHANNELS, FSUB_PICS, ADMINS,  LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, REQST_CHANNEL, GRP_LNK, SUPPORT_CHAT_ID, MAX_B_TN, VERIFY, REACTIONS, HOW_TO_VERIFY, FTMBOTZX_VERIFIED_LOG, FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK, STREAM_MODE, EMOJI_MODE, OWNER_LNK
+from info import CHANNELS, FSUB_PICS, ADMINS,  LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, REQST_CHANNEL, GRP_LNK, SUPPORT_CHAT_ID, MAX_B_TN, VERIFY, REACTIONS, HOW_TO_VERIFY, FTMBOTZX_VERIFIED_LOG, FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK, STREAM_MODE, EMOJI_MODE, OWNER_LNK, DEFAULT_PIC
 from utils import get_settings, get_size, is_subscribed,  save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial
 from database.connections_mdb import active_connection
 
@@ -26,8 +26,6 @@ from database.connections_mdb import active_connection
 # Set up logging
 logging.basicConfig(level=logging.ERROR)
 logger = logging.getLogger(__name__)
-
-
 
 
 async def cleanup_invalid_media(file_id):
@@ -59,6 +57,25 @@ async def start(client, message):
         except Exception as e:
             logger.error(f"Failed to react to message: {e}")
             pass 
+            
+    # --- GET USER PROFILE PIC LOGIC START ---
+    user_id = message.from_user.id
+    try:
+        user_profile_pics = []
+        async for photo in client.get_chat_photos(user_id, limit=1):
+            user_profile_pics.append(photo)
+            
+        if len(user_profile_pics) > 0:
+            # Agar user ki DP hai toh wo set karo
+            start_pic = user_profile_pics[0].file_id
+        else:
+            # Agar DP nahi hai toh DEFAULT_PIC set karo
+            start_pic = DEFAULT_PIC
+    except Exception as e:
+        # Kisi bhi error mein (jaise bot start nahi kar paya etc) DEFAULT_PIC set karo
+        logger.error(f"Failed to get user DP: {e}")
+        start_pic = DEFAULT_PIC
+    # --- GET USER PROFILE PIC LOGIC END ---
 
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
@@ -67,16 +84,19 @@ async def start(client, message):
                     InlineKeyboardButton('🍁 Update Channel 🍁', url=CHNL_LNK)
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
+        # Using the start_pic logic here for group start
+        await message.reply_photo(photo=start_pic, caption=script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
         await asyncio.sleep(2) # 😢 😬 wait a bit, before checking.
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
             await db.add_chat(message.chat.id, message.chat.title)
         return 
+        
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
+        
     if len(message.command) != 2:
         buttons = [[
                     InlineKeyboardButton('🔰 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 🔰', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
@@ -100,11 +120,12 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+            
         m=await message.reply_text("⏳")
         await asyncio.sleep(0.4)
         await m.delete()        
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=start_pic, # Yahan PICS ko start_pic se replace kiya hai
             caption=script.START_TXT.format(message.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -164,7 +185,7 @@ async def start(client, message):
         await asyncio.sleep(0.4)
         await m.delete()        
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=start_pic, # Yahan bhi start_pic use kar rahe hain
             caption=script.START_TXT.format(message.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
