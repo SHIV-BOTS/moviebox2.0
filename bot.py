@@ -1,10 +1,14 @@
 import sys
 import glob
+import importlib
 from pathlib import Path
 from pyrogram import idle
 import logging
 import logging.config
 import time  
+
+# Get logging configurations
+
 
 # Set up specific loggers
 logger = logging.getLogger('bot')
@@ -57,8 +61,7 @@ from Script import script
 from datetime import date, datetime 
 import pytz
 from aiohttp import web
-
-from plugins import web_server 
+from plugins import web_server, check_expired_premium
 
 import asyncio
 from pyrogram import idle
@@ -67,20 +70,13 @@ from util.keepalive import ping_server
 from ftmbotzx_botz.clients import initialize_clients
 botStartTime = time.time()
 
-# 👇 Event Loop Warning Fix
-try:
-    loop = asyncio.get_running_loop()
-except RuntimeError:
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
+ppath = "plugins/*.py"
+files = glob.glob(ppath)
+loop = asyncio.get_event_loop()
 
 async def Ftmbotzx_start():
     try:
-        logger.info("🚀 Starting Shiv Bot...")
-        
-        # Pyrogram ka built-in plugin system ensure karna.
-        # Agar FtmbotzxBot dusri file me initialize hua hai toh make sure wahan `plugins=dict(root="plugins")` ho.
-        # Hum yahan usko start kar rahe hain.
+        logger.info("🚀 Starting FtmBotzx Bot...")
         await FtmbotzxBot.start()
 
         bot_info = await FtmbotzxBot.get_me()
@@ -89,6 +85,26 @@ async def Ftmbotzx_start():
 
         logger.info("🔧 Initializing additional clients...")
         await initialize_clients()
+
+        logger.info("📦 Loading plugins...")
+        loaded_plugins = 0
+        for name in files:
+            try:
+                with open(name) as a:
+                    patt = Path(a.name)
+                    plugin_name = patt.stem.replace(".py", "")
+                    plugins_dir = Path(f"plugins/{plugin_name}.py")
+                    import_path = "plugins.{}".format(plugin_name)
+                    spec = importlib.util.spec_from_file_location(import_path, plugins_dir)
+                    load = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(load)
+                    sys.modules["plugins." + plugin_name] = load
+                    logger.info(f"  📄 {plugin_name}")
+                    loaded_plugins += 1
+            except Exception as e:
+                logger.error(f"❌ Failed to load plugin {plugin_name}: {e}")
+
+        logger.info(f"✅ Successfully loaded {loaded_plugins} plugins")
 
         logger.info("🔄 Setting up additional configurations...")
         if ON_HEROKU:
@@ -125,7 +141,10 @@ async def Ftmbotzx_start():
         temp.B_LINK = me.mention
         FtmbotzxBot.username = '@' + me.username
 
-        logger.info(f"🎯 JɪᴏSᴛᴀʀ Mᴏᴠɪᴇs Hᴜʙ Bot v5.0.2025 with Pyrogram v2.3.45 (Layer 187) started successfully!")
+        logger.info("⏰ Starting premium check task...")
+        FtmbotzxBot.loop.create_task(check_expired_premium(FtmbotzxBot))
+
+        logger.info(f"🎯 Movie Box Bot v5.0.2025 with Pyrogram v2.3.45 (Layer 187) started successfully!")
         logger.info("📊 Configuration Summary:")
         logger.info(LOG_STR)
         logger.info(script.LOGO)
@@ -153,7 +172,7 @@ async def Ftmbotzx_start():
         await web.TCPSite(app, bind_address, PORT).start()
         logger.info(f"✅ Web server started successfully on {bind_address}:{PORT}")
 
-        logger.info("🎉 The Shiv's Bot is now running and ready to serve!")
+        logger.info("🎉 Shiv Bot is now running and ready to serve!")
         await idle()
 
     except Exception as e:
