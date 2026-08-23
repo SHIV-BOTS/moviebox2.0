@@ -76,7 +76,7 @@ except RuntimeError:
 
 async def Ftmbotzx_start():
     try:
-        logger.info("🚀 Starting FtmBotzx Bot...")
+        logger.info("🚀 Starting Shiv Bot...")
         
         # Pyrogram ka built-in plugin system ensure karna.
         # Agar FtmbotzxBot dusri file me initialize hua hai toh make sure wahan `plugins=dict(root="plugins")` ho.
