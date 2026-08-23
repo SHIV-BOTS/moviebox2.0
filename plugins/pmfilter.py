@@ -79,6 +79,43 @@ async def get_shortlink(url):
     loop = asyncio.get_event_loop()
     return await loop.run_in_executor(None, get_shortlink_sync, url)
 
+# ==========================================
+# 🚀 NAYA LOGGING FUNCTION YAHAN ADD KIYA HAI
+# ==========================================
+async def send_search_log(client, message, search, total_results):
+    try:
+        is_avail = "✅ <b>Aᴠᴀɪʟᴀʙʟᴇ</b>" if total_results > 0 else "❌ <b>Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ</b>"
+        
+        user = message.from_user
+        if user:
+            user_mention = user.mention
+            user_id = user.id
+        else:
+            user_mention = "Anonymous Admin"
+            user_id = message.sender_chat.id if message.sender_chat else 0
+
+        if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
+            grp_name = message.chat.title
+            grp_link = f"@{message.chat.username}" if message.chat.username else "Private Group"
+            log_text = (
+                f"🔍 <b>#Nᴇᴡ_Gʀᴏᴜᴘ_Sᴇᴀʀᴄʜ</b>\n\n"
+                f"👥 <b>Gʀᴏᴜᴘ:</b> {grp_name} ({grp_link})\n"
+                f"👤 <b>Usᴇʀ:</b> {user_mention} <code>[{user_id}]</code>\n"
+                f"🎬 <b>Mᴏᴠɪᴇ Sᴇᴀʀᴄʜᴇᴅ:</b> <code>{search}</code>\n"
+                f"📦 <b>Sᴛᴀᴛᴜs:</b> {is_avail} ({total_results} Fɪʟᴇs)"
+            )
+        else:
+            log_text = (
+                f"👤 <b>#Nᴇᴡ_Pʀɪᴠᴀᴛᴇ_Sᴇᴀʀᴄʜ (PM)</b>\n\n"
+                f"👤 <b>Usᴇʀ:</b> {user_mention} <code>[{user_id}]</code>\n"
+                f"🎬 <b>Mᴏᴠɪᴇ Sᴇᴀʀᴄʜᴇᴅ:</b> <code>{search}</code>\n"
+                f"📦 <b>Sᴛᴀᴛᴜs:</b> {is_avail} ({total_results} Fɪʟᴇs)"
+            )
+        await client.send_message(LOG_CHANNEL, text=log_text, disable_web_page_preview=True)
+    except Exception as e:
+        logger.error(f"Failed to send search log to group: {e}")
+# ==========================================
+
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     group_name = message.chat.title
@@ -108,6 +145,10 @@ async def give_filter(client, message):
     else: 
         search = message.text
         temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
+        
+        # Log Bhejna for Support Chat
+        await send_search_log(client, message, search, total_results)
+        
         if total_results == 0:
             return
         else:
@@ -138,7 +179,7 @@ async def pm_text(bot, message):
             await auto_filter(bot, message)
         else:
             await message.reply_text(
-             text=f"<b>🙋 ʜᴇʏ {user} 😍 ,\n\n𝒀𝒐𝒖 𝒄𝒂𝒏 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏𝒍𝒚 𝒐𝒏 𝒐𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑. 𝒀𝒐𝒖 𝒂𝒓𝒆 𝒏𝒐𝒕 𝒂𝒍𝒍𝒐𝒘𝒆𝒅 𝒕𝒐 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕. 𝑷𝒍𝒆𝒂𝒔𝒆 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒎𝒐𝒗𝒊𝒆 𝒈𝒓𝒐𝒖𝒑 𝒃𝒚 𝒄𝒍𝒊𝒄𝒌𝒊𝒏𝒈 𝒐𝒏 𝒕𝒉𝒆  𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬 𝒃𝒖𝒕𝒕𝒐𝒏 𝒈𝒊𝒗𝒆𝒏 𝒃𝒆𝒍𝒐𝒘 𝒂𝒏𝒅 𝒔𝒆𝒂𝒓𝒄𝒉 𝒚𝒐𝒖𝒓 𝒇𝒂𝒗𝒐𝒓𝒊𝒕𝒆 𝒎𝒐𝒗𝒊𝒆 𝒕𝒉𝒆𝒓𝒆 👇\n\n<blockquote>आप केवल हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 पर ही 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 कर सकते हो । आपको 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕 पर 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 करने की 𝑷𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏 नहीं है कृपया नीचे दिए गए 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬 वाले 𝑩𝒖𝒕ᴛᴏɴ पर क्लिक करके हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 को  जৈoɪɴ करें और वहां पर अपनी मनपसंद 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 सर्च करें ।</blockquote></b>",   
+             text=f"<b>🙋 ʜᴇʏ {user} 😍 ,\n\n𝒀𝒐𝒖 𝒄𝒂𝒏 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏𝒍𝒚 𝒐𝒏 𝒐𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑. 𝒀𝒐𝒖 𝒂𝒓𝒆 ɴ𝒐𝒕 𝒂𝒍𝒍𝒐𝒘𝒆𝒅 𝒕𝒐 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕. 𝑷𝒍𝒆𝒂𝒔𝒆 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒎𝒐𝒗𝒊𝒆 𝒈𝒓𝒐𝒖𝒑 𝒃𝒚 𝒄𝒍𝒊𝒄𝒌𝒊𝒏𝒈 𝒐𝒏 𝒕𝒉𝒆  𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬 𝒃𝒖𝒕𝒕𝒐𝒏 𝒈𝒊𝒗𝒆𝒏 𝒃𝒆𝒍𝒐𝒘 𝒂𝒏𝒅 𝒔𝒆𝒂𝒓𝒄𝒉 𝒚𝒐𝒖𝒓 𝒇𝒂𝒗𝒐𝒓𝒊𝒕𝒆 𝒎𝒐𝒗𝒊𝒆 𝒕𝒉𝒆𝒓𝒆 👇\n\n<blockquote>आप केवल हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 पर ही 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 कर सकते हो । आपको 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕 पर 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 करने की 𝑷𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏 नहीं है कृपया नीचे दिए गए 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬 वाले 𝑩𝒖𝒕ᴛᴏɴ पर क्लिक करके हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 को  जৈoɪɴ करें और वहां पर अपनी मनपसंद 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 सर्च करें ।</blockquote></b>",   
              reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=GRP_LNK)]])
             )
             await bot.send_message(
@@ -363,7 +404,6 @@ async def qualities_cb_handler(client: Client, query: CallbackQuery):
         pass
     _, key = query.data.split("#")
     
-    # FIX: Check if search exists to avoid crash & use BUTTONS for chaining
     search = BUTTONS.get(key) or FRESH.get(key)
     if not search:
         return await query.answer("⚠️ Search Query Expired! Please search again.", show_alert=True)
@@ -394,7 +434,6 @@ async def qualities_cb_handler(client: Client, query: CallbackQuery):
 async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     _, qual, key = query.data.split("#")
     
-    # FIX: Use previous filtered search if available
     search = BUTTONS.get(key) or FRESH.get(key)
     if not search:
         return await query.answer("⚠️ Search Query Expired! Please search again.", show_alert=True)
@@ -475,7 +514,6 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
         pass
     _, key = query.data.split("#")
     
-    # FIX: Chaining
     search = BUTTONS.get(key) or FRESH.get(key)
     if not search:
         return await query.answer("⚠️ Search Query Expired! Please search again.", show_alert=True)
@@ -500,7 +538,6 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
 async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     _, lang, key = query.data.split("#")
     
-    # FIX: Chaining
     search = BUTTONS.get(key) or FRESH.get(key)
     if not search:
         return await query.answer("⚠️ Search Query Expired! Please search again.", show_alert=True)
@@ -579,7 +616,6 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
         pass
     _, key = query.data.split("#")
     
-    # FIX: Expiry check
     search = BUTTONS.get(key) or FRESH.get(key)
     if not search:
         return await query.answer("⚠️ Search Query Expired! Please search again.", show_alert=True)
@@ -611,7 +647,6 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         
     search = search.replace("_", " ")
     
-    # Clean previous season terms from search string
     season_search = ["s01","s02", "s03", "s04", "s05", "s06", "s07", "s08", "s09", "s10", "season 01","season 02","season 03","season 04","season 05","season 06","season 07","season 08","season 09","season 10", "season 1","season 2","season 3","season 4","season 5","season 6","season 7","season 8","season 9"]
     for s_term in season_search:
         if s_term in search:
@@ -632,7 +667,6 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     search = f"{search} {seas}"
     BUTTONS0[key] = search
 
-    # FIX: Correct get_search_results arguments
     files, _, _ = await get_search_results(chat_id, search, offset=0, filter=True)
     files = [file for file in files if re.search(seas, file.file_name, re.IGNORECASE)] if files else []
 
@@ -665,7 +699,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     else:
         btn.insert(0, [InlineKeyboardButton("⇈ Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ ⇈", 'reqinfo')])
         btn.insert(0, [
-            InlineKeyboardButton("Qᴜᴀʟɪᴛ起Y", callback_data=f"qualities#{key}"),
+            InlineKeyboardButton("QᴜᴀʟɪᴛY", callback_data=f"qualities#{key}"),
             InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
             InlineKeyboardButton("Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
         ])
@@ -1969,6 +2003,10 @@ async def auto_filter(client, msg, spoll=False):
             search = search.replace(":","")
             files, offset, total_results = await get_search_results(message.chat.id ,search, offset=0, filter=True)
             settings = await get_settings(message.chat.id)
+            
+            # Log Bhejna
+            await send_search_log(client, message, search, total_results)
+            
             if not files:
                 if settings["spell_check"]:
                     ai_sts = await m.edit('🤖 ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ, ᴀɪ ɪꜱ ᴄʜᴇᴄᴋɪɴɢ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ...')
@@ -1989,6 +2027,10 @@ async def auto_filter(client, msg, spoll=False):
         m=await message.reply_text(f'**🔎 sᴇᴀʀᴄʜɪɴɢ** `{search}`')
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
+        
+        # Log Bhejna
+        await send_search_log(client, message, search, total_results)
+        
     pre = 'filep' if settings['file_secure'] else 'file'
     key = f"{message.chat.id}-{message.id}"
     FRESH[key] = search
