@@ -643,6 +643,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         
     search = search.replace("_", " ")
     
+    # Clean previous season terms from search string
     season_search_terms = ["s01","s02", "s03", "s04", "s05", "s06", "s07", "s08", "s09", "s10", "season 01","season 02","season 03","season 04","season 05","season 06","season 07","season 08","season 09","season 10", "season 1","season 2","season 3","season 4","season 5","season 6","season 7","season 8","season 9"]
     for s_term in season_search_terms:
         if s_term in search:
@@ -660,34 +661,36 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     except:
         pass
 
-    # 🚀 FIX: Smart Season Search (S01, Season 01, Season 1 combinations)
-    seas_dict = {
-        "season 1": "s01", "season 2": "s02", "season 3": "s03", "season 4": "s04", "season 5": "s05",
-        "season 6": "s06", "season 7": "s07", "season 8": "s08", "season 9": "s09", "season 10": "s10"
-    }
+    # 🚀 FIX: Super Smart Season Search (Broad Search)
+    # Get the raw number from the 'seas' string (e.g., extracts '4' from 'season 4')
+    season_num = ''.join(filter(str.isdigit, seas))
     
-    s_code = seas_dict.get(seas, seas)
+    if not season_num:
+        return await query.answer(f"🚫 Cᴏᴜʟᴅ ɴᴏᴛ ᴘᴀʀsᴇ sᴇᴀsᴏɴ ɴᴜᴍʙᴇʀ 🚫", show_alert=True)
+
+    # Generate all possible formats
+    s_code1 = f"s{season_num.zfill(2)}" # s04
+    s_code2 = f"season {season_num.zfill(2)}" # season 04
+    s_code3 = f"s{season_num}" # s4
+    s_code4 = f"season {season_num}" # season 4
+
+    files = []
     
-    search1 = f"{search} {s_code}"
-    BUTTONS0[key] = search1
-    files, offset, total_results = await get_search_results(chat_id, search1, offset=0, filter=True)
+    # 1. Search DB with just the base name first
+    all_files, _, _ = await get_search_results(chat_id, search, offset=0, filter=True)
     
-    if not files:
-        s_code_long = s_code.replace("s0", "season 0").replace("s10", "season 10")
-        search2 = f"{search} {s_code_long}"
-        BUTTONS0[key] = search2
-        files, offset, total_results = await get_search_results(chat_id, search2, offset=0, filter=True)
-        
-    if not files:
-        search3 = f"{search} {seas}"
-        BUTTONS0[key] = search3
-        files, offset, total_results = await get_search_results(chat_id, search3, offset=0, filter=True)
+    if all_files:
+        # 2. Filter the results purely based on file names using Regex
+        # This regex looks for variations of "S04", "Season 4", "S4" anywhere in the file name
+        regex_pattern = re.compile(rf"(?i)(\b|_)({s_code1}|{s_code2}|{s_code3}|{s_code4})(\b|_)")
+        files = [f for f in all_files if regex_pattern.search(f.file_name)]
 
     if not files:
+        # Reset button status to previous working search if current fails
         BUTTONS[key] = search
         return await query.answer(f"🚫 Nᴏ Fɪʟᴇs Fᴏᴜɴᴅ ꜰᴏʀ {seas.title()} 🚫", show_alert=True)
         
-    BUTTONS[key] = BUTTONS0[key]
+    BUTTONS[key] = f"{search} {s_code1}" # Save successful season search visually
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
     pre = 'filep' if settings['file_secure'] else 'file'
@@ -712,7 +715,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000)))
         remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
-        cap = await get_cap(settings, remaining_seconds, files, query, total_results, BUTTONS[key])
+        cap = await get_cap(settings, remaining_seconds, files, query, len(files), BUTTONS[key])
         try:
             await query.message.edit_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
         except MessageNotModified:
@@ -1556,7 +1559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ 🔄', callback_data='channels')
                 ],[
                     InlineKeyboardButton(' ʜᴇʟᴘ 🚨', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓', callback_data='about')
+                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓ ', callback_data='about')
                 ],[
                     InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ..💲', callback_data="shortlink_info")
                 ]]
@@ -2143,9 +2146,9 @@ async def auto_filter(client, msg, spoll=False):
                 cap += f"<b>\n<a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> 📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n</a></b>"
     else:
         if settings["button"]:
-            cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n🌳 𝑹𝒆𝒒𝒖𝒆𝒔𝒕𝒆𝒅 𝑭𝒊𝒍𝒆 👇 \n\n</b>"
+            cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n🌳 𝑹𝒆𝒒𝒖𝒆𝒔𝒕ᴇᴅ 𝑭ɪʟᴇ 👇 \n\n</b>"
         else:
-            cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n🌳 𝑹𝒆𝒒𝒖𝒆𝒔𝒕𝒆𝒅 𝑭𝒊𝒍𝒆 👇 \n\n</b>"
+            cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n🌳 𝑹𝒆𝒒𝒖𝒆𝒔𝒕ᴇᴅ 𝑭ɪʟᴇ 👇 \n\n</b>"
             # cap+="<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
             for file in files:
                 cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> 📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
@@ -2444,6 +2447,7 @@ async def manual_filters(client, message, text=False):
                                 if settings['auto_delete']:
                                     await joelkb.delete()
 
+
                 except Exception as e:
                     logger.exception(e)
             break
@@ -2622,6 +2626,7 @@ async def global_filters(client, message, text=False):
                                 settings = await get_settings(message.chat.id)
                                 if settings['auto_delete']:
                                     await joelkb.delete()
+
 
                 except Exception as e:
                     logger.exception(e)
