@@ -179,7 +179,7 @@ async def pm_text(bot, message):
             await auto_filter(bot, message)
         else:
             await message.reply_text(
-             text=f"<b>🙋 ʜᴇʏ {user} 😍 ,\n\n𝒀𝒐𝒖 𝒄𝒂𝒏 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏𝒍𝒚 𝒐𝒏 𝒐𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑. 𝒀𝒐𝒖 𝒂𝒓𝒆 ɴ𝒐𝒕 𝒂𝒍𝒍𝒐𝒘𝒆𝒅 𝒕𝒐 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕. 𝑷𝒍𝒆𝒂𝒔𝒆 𝒋𝒐𝒊𝒏 𝒐𝒖𝒓 𝒎𝒐𝒗𝒊𝒆 𝒈𝒓𝒐𝒖𝒑 𝒃𝒚 𝒄𝒍𝒊𝒄𝒌𝒊𝒏𝒈 𝒐𝒏 𝒕𝒉𝒆  𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬 𝒃𝒖𝒕𝒕𝒐𝒏 𝒈𝒊𝒗𝒆𝒏 𝒃𝒆𝒍𝒐𝒘 𝒂𝒏𝒅 𝒔𝒆𝒂𝒓𝒄𝒉 𝒚𝒐𝒖𝒓 𝒇𝒂𝒗𝒐𝒓𝒊𝒕𝒆 𝒎𝒐𝒗𝒊𝒆 𝒕𝒉𝒆𝒓𝒆 👇\n\n<blockquote>आप केवल हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 पर ही 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 कर सकते हो । आपको 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕 पर 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 करने की 𝑷𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏 नहीं है कृपया नीचे दिए गए 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬 वाले 𝑩𝒖𝒕ᴛᴏɴ पर क्लिक करके हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 को  जৈoɪɴ करें और वहां पर अपनी मनपसंद 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 सर्च करें ।</blockquote></b>",   
+             text=f"<b>🙋 ʜᴇʏ {user} 😍 ,\n\n𝒀𝒐𝒖 𝒄𝒂𝒏 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏𝒍𝒚 𝒐𝒏 𝒐𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑. 𝒀𝒐𝒖 ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ꜱᴇᴀʀᴄʜ ꜰᴏʀ ᴍᴏᴠɪᴇꜱ ᴏɴ ᴅɪʀᴇᴄᴛ ʙᴏᴛ. ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ  ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʏᴏᴜʀ ꜰᴀᴠᴏʀɪᴛᴇ ᴍᴏᴠɪᴇ ᴛʜᴇʀᴇ 👇\n\n<blockquote>आप केवल हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 पर ही 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 कर सकते हो । आपको 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕 पर 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 करने की 𝑷𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏 नहीं है कृपया नीचे दिए गए 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬 वाले 𝑩𝒖ᴛᴛᴏɴ पर क्लिक करके हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 को  जৈoɪɴ करें और वहां पर अपनी मनपसंद 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 सर्च करें ।</blockquote></b>",   
              reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=GRP_LNK)]])
             )
             await bot.send_message(
@@ -187,7 +187,6 @@ async def pm_text(bot, message):
                 text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\n👤 Nᴀᴍᴇ : {user}\n🆔 ID : {user_id}\n💬 Mᴇssᴀɢᴇ : {content}</b>"
             )
     except Exception as e:
-        # Log the error
         print(f"An error occurred: {str(e)}")
 
 @Client.on_callback_query(filters.regex(r"^next"))
@@ -661,36 +660,36 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     except:
         pass
 
-    # 🚀 FIX: Super Smart Season Search (Broad Search)
-    # Get the raw number from the 'seas' string (e.g., extracts '4' from 'season 4')
+    # 🚀 FIX: SMART DATABASE SEARCH FOR SEASONS
     season_num = ''.join(filter(str.isdigit, seas))
     
     if not season_num:
         return await query.answer(f"🚫 Cᴏᴜʟᴅ ɴᴏᴛ ᴘᴀʀsᴇ sᴇᴀsᴏɴ ɴᴜᴍʙᴇʀ 🚫", show_alert=True)
 
-    # Generate all possible formats
-    s_code1 = f"s{season_num.zfill(2)}" # s04
-    s_code2 = f"season {season_num.zfill(2)}" # season 04
-    s_code3 = f"s{season_num}" # s4
-    s_code4 = f"season {season_num}" # season 4
-
+    # Yeh 4 alag-alag format automatically database mein dhoondega
+    search_queries = [
+        f"{search} s{season_num.zfill(2)}",       # naruto s04
+        f"{search} season {season_num.zfill(2)}", # naruto season 04
+        f"{search} season {season_num}",          # naruto season 4
+        f"{search} s{season_num}"                 # naruto s4
+    ]
+    
     files = []
+    successful_search = search
+    total_results = 0
+    offset = ""
     
-    # 1. Search DB with just the base name first
-    all_files, _, _ = await get_search_results(chat_id, search, offset=0, filter=True)
-    
-    if all_files:
-        # 2. Filter the results purely based on file names using Regex
-        # This regex looks for variations of "S04", "Season 4", "S4" anywhere in the file name
-        regex_pattern = re.compile(rf"(?i)(\b|_)({s_code1}|{s_code2}|{s_code3}|{s_code4})(\b|_)")
-        files = [f for f in all_files if regex_pattern.search(f.file_name)]
+    for sq in search_queries:
+        files, offset, total_results = await get_search_results(chat_id, sq, offset=0, filter=True)
+        if files:
+            successful_search = sq
+            break
 
     if not files:
-        # Reset button status to previous working search if current fails
         BUTTONS[key] = search
         return await query.answer(f"🚫 Nᴏ Fɪʟᴇs Fᴏᴜɴᴅ ꜰᴏʀ {seas.title()} 🚫", show_alert=True)
         
-    BUTTONS[key] = f"{search} {s_code1}" # Save successful season search visually
+    BUTTONS[key] = successful_search
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
     pre = 'filep' if settings['file_secure'] else 'file'
@@ -708,14 +707,14 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         ])
         btn.insert(0, [InlineKeyboardButton("Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")])
 
-    offset = 0
+    offset = offset if offset else ""
     btn.append([InlineKeyboardButton(text="↭ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ↭", callback_data=f"next_{req}_{key}_{offset}")])
 
     if not settings["button"]:
         cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
         time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000)))
         remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
-        cap = await get_cap(settings, remaining_seconds, files, query, len(files), BUTTONS[key])
+        cap = await get_cap(settings, remaining_seconds, files, query, total_results, BUTTONS[key])
         try:
             await query.message.edit_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
         except MessageNotModified:
@@ -2148,7 +2147,7 @@ async def auto_filter(client, msg, spoll=False):
         if settings["button"]:
             cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n🌳 𝑹𝒆𝒒𝒖𝒆𝒔𝒕ᴇᴅ 𝑭ɪʟᴇ 👇 \n\n</b>"
         else:
-            cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n🌳 𝑹𝒆𝒒𝒖𝒆𝒔𝒕ᴇᴅ 𝑭ɪʟᴇ 👇 \n\n</b>"
+            cap = f"<b>🧿 ᴛɪᴛʟᴇ : <code>{search}</code>\n📂 ᴛᴏᴛᴀʟ ꜰɪʟᴇꜱ : <code>{total_results}</code>\n📝 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}\n⏰ ʀᴇsᴜʟᴛ ɪɴ : <code>{remaining_seconds} Sᴇᴄᴏɴᴅs</code>\n\n🌳 𝑹𝒆𝒒𝒖𝒆𝒔𝒕𝒆ᴅ 𝑭ɪʟᴇ 👇 \n\n</b>"
             # cap+="<b>Hᴇʏ {message.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
             for file in files:
                 cap += f"<b><a href='https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}'> 📁 {get_size(file.file_size)} ▷ {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}\n\n</a></b>"
