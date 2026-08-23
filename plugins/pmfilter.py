@@ -154,7 +154,7 @@ async def give_filter(client, message):
         else:
             return await message.reply_text(
                 f"<b>Hᴇʏ {message.from_user.mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ɪꜱ ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6280269890821558384\">✅</emoji>\n\n<emoji id=\"5258514780469075716\">📂</emoji> ꜰɪʟᴇꜱ ꜰᴏᴜɴᴅ : {str(total_results)}\n<emoji id=\"5429571366384842791\">🔎</emoji> ꜱᴇᴀʀᴄʜ :</b> <code>{search}</code>\n\n<b><emoji id=\"6129782440157256336\">⚠️</emoji> ᴛʜɪs ɪs ᴀ <u>sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ</u> sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\n<emoji id=\"5370546867786523009\">📝</emoji> ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ : 👇</b>",   
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔎 ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)]])
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴊᴏɪɴ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ <emoji id=\"5429571366384842791\">🔎</emoji>", url=GRP_LNK)]])
             )
 
 @Client.on_message(filters.private & filters.text & filters.incoming)
@@ -182,7 +182,7 @@ async def pm_text(bot, message):
         else:
             await message.reply_text(
              text=f"<b><emoji id=\"5246815495713207687\">👋</emoji> ʜᴇʏ {user} <emoji id=\"6190651601439428976\">😍</emoji> ,\n\n𝒀𝒐𝒖 𝒄𝒂𝒏 𝒔𝒆𝒂𝒓𝒄𝒉 𝒇𝒐𝒓 𝒎𝒐𝒗𝒊𝒆𝒔 𝒐𝒏𝒍𝒚 𝒐𝒏 𝒐𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑. 𝒀𝒐𝒖 ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ꜱᴇᴀʀᴄʜ ꜰᴏʀ ᴍᴏᴠɪᴇꜱ ᴏɴ ᴅɪʀᴇᴄᴛ ʙᴏᴛ. ᴘʟᴇᴀꜱᴇ ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ  ʀᴇǫᴜᴇꜱᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ ꜱᴇᴀʀᴄʜ ʏᴏᴜʀ ꜰᴀᴠᴏʀɪᴛᴇ ᴍᴏᴠɪᴇ ᴛʜᴇʀᴇ 👇\n\n<blockquote>आप केवल हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 पर ही 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 कर सकते हो । आपको 𝑫𝒊𝒓𝒆𝒄𝒕 𝑩𝒐𝒕 पर 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 करने की 𝑷𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏 नहीं है कृपया नीचे दिए गए 𝑹𝑬𝑸𝑼𝑬𝑺𝑻 𝑯𝑬𝑹𝑬 वाले 𝑩𝒖ᴛᴛᴏɴ पर क्लिक करके हमारे 𝑴𝒐𝒗𝒊𝒆 𝑮𝒓𝒐𝒖𝒑 को  जৈoɪɴ करें और वहां पर अपनी मनपसंद 𝑴𝒐𝒗𝒊𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 सर्च करें ।</blockquote></b>",   
-             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=GRP_LNK)]])
+             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("<emoji id=\"5370546867786523009\">📝</emoji> ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=GRP_LNK)]])
             )
             await bot.send_message(
                 chat_id=LOG_CHANNEL,
@@ -233,36 +233,36 @@ async def next_page(bot, query):
 
         btn.insert(0, 
             [
-                InlineKeyboardButton("🔝 Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ 🔝", 'reqinfo')
+                InlineKeyboardButton("<emoji id=\"6100389058372966174\">🔝</emoji> Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ <emoji id=\"6100389058372966174\">🔝</emoji>", 'reqinfo')
             ]
         )
         btn.insert(0, 
             [ 
-                InlineKeyboardButton("✨ Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("💬 Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("🎞 Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("<emoji id=\"6125239923831217642\">✨</emoji> Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("<emoji id=\"6021618194228187816\">💬</emoji> Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("<emoji id=\"5937999673510858217\">🎞</emoji> Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📥 Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("<emoji id=\"5776182936638329359\">📥</emoji> Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
         ])
 
     else:
         btn = []
         btn.insert(0, 
             [
-                InlineKeyboardButton("🔝 Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ 🔝", 'reqinfo')
+                InlineKeyboardButton("<emoji id=\"6100389058372966174\">🔝</emoji> Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ <emoji id=\"6100389058372966174\">🔝</emoji>", 'reqinfo')
             ]
         )
         btn.insert(0, 
             [
-                InlineKeyboardButton("✨ Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
-                InlineKeyboardButton("💬 Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-                InlineKeyboardButton("🎞 Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
+                InlineKeyboardButton("<emoji id=\"6125239923831217642\">✨</emoji> Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
+                InlineKeyboardButton("<emoji id=\"6021618194228187816\">💬</emoji> Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("<emoji id=\"5937999673510858217\">🎞</emoji> Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("📥 Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
+            InlineKeyboardButton("<emoji id=\"5776182936638329359\">📥</emoji> Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")
         ])
 
     try:
@@ -275,16 +275,16 @@ async def next_page(bot, query):
                 off_set = offset - 10
             if n_offset == 0:
                 btn.append(
-                    [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
+                    [InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
                 )
             elif off_set is None:
-                btn.append([InlineKeyboardButton("📜 ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
+                btn.append([InlineKeyboardButton("<emoji id=\"5222281328258465590\">📜</emoji> ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data=f"next_{req}_{key}_{n_offset}")])
             else:
                 btn.append(
                     [
-                        InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                        InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                         InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"),
-                        InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
+                        InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
         else:
@@ -296,16 +296,16 @@ async def next_page(bot, query):
                 off_set = offset - int(MAX_B_TN)
             if n_offset == 0:
                 btn.append(
-                    [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages")]
+                    [InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages")]
                 )
             elif off_set is None:
-                btn.append([InlineKeyboardButton("📜 ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"), InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
+                btn.append([InlineKeyboardButton("<emoji id=\"5222281328258465590\">📜</emoji> ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"), InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data=f"next_{req}_{key}_{n_offset}")])
             else:
                 btn.append(
                     [
-                        InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                        InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                         InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"),
-                        InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
+                        InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
     except KeyError:
@@ -318,16 +318,16 @@ async def next_page(bot, query):
             off_set = offset - 10
         if n_offset == 0:
             btn.append(
-                [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
+                [InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
             )
         elif off_set is None:
-            btn.append([InlineKeyboardButton("📜 ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")])
+            btn.append([InlineKeyboardButton("<emoji id=\"5222281328258465590\">📜</emoji> ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data=f"next_{req}_{key}_{n_offset}")])
         else:
             btn.append(
                 [
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                     InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"),
-                    InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
+                    InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data=f"next_{req}_{key}_{n_offset}")
                 ],
             )
     if not settings["button"]:
@@ -379,7 +379,7 @@ async def advantage_spoll_choker(bot, query):
                     await bot.send_message(chat_id=BIN_CHANNEL, text=(script.NORSLTS.format(reqstr.id, reqstr.mention, movie)))
 
                 contact_admin_button = InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("👤 Cʟɪᴄᴋ ʜᴇʀᴇ & ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ", url=OWNER_LNK)]]
+                    [[InlineKeyboardButton("<emoji id=\"5258011929993026890\">👤</emoji> Cʟɪᴄᴋ ʜᴇʀᴇ & ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ", url=OWNER_LNK)]]
                 )
 
                 k = await query.message.edit(script.MVE_NT_FND, reply_markup=contact_admin_button)
@@ -396,7 +396,7 @@ async def advantage_spoll_choker(bot, query):
 async def qualities_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
-            return await query.answer(f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
+            return await query.answer(f"<emoji id=\"6102938383456146362\">⚠️</emoji> ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
     except:
         pass
     _, key = query.data.split("#")
@@ -411,15 +411,15 @@ async def qualities_cb_handler(client: Client, query: CallbackQuery):
     valid_quals = [q for q in QUALITIES if q.strip()]
     btn = []
     for i in range(0, len(valid_quals), 2):
-        row = [InlineKeyboardButton(text=f"✨ {valid_quals[i].title()}", callback_data=f"fq#{valid_quals[i].lower()}#{key}")]
+        row = [InlineKeyboardButton(text=f"<emoji id=\"6125239923831217642\">✨</emoji> {valid_quals[i].title()}", callback_data=f"fq#{valid_quals[i].lower()}#{key}")]
         if i+1 < len(valid_quals):
-            row.append(InlineKeyboardButton(text=f"✨ {valid_quals[i+1].title()}", callback_data=f"fq#{valid_quals[i+1].lower()}#{key}"))
+            row.append(InlineKeyboardButton(text=f"<emoji id=\"6125239923831217642\">✨</emoji> {valid_quals[i+1].title()}", callback_data=f"fq#{valid_quals[i+1].lower()}#{key}"))
         btn.append(row)
 
-    btn.insert(0, [InlineKeyboardButton(text="🔝 ꜱᴇʟᴇᴄᴛ ǫᴜᴀʟɪᴛʏ 🔝", callback_data="ident")])
+    btn.insert(0, [InlineKeyboardButton(text="<emoji id=\"6100389058372966174\">🔝</emoji> ꜱᴇʟᴇᴄᴛ ǫᴜᴀʟɪᴛʏ <emoji id=\"6100389058372966174\">🔝</emoji>", callback_data="ident")])
     req = query.from_user.id
     offset = 0
-    btn.append([InlineKeyboardButton(text="⬅️ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ⬅️", callback_data=f"fq#homepage#{key}")])
+    btn.append([InlineKeyboardButton(text="<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs <emoji id=\"5409010700808892424\">⬅️</emoji>", callback_data=f"fq#homepage#{key}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
 
@@ -441,7 +441,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     message = query.message
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
-            return await query.answer(f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
+            return await query.answer(f"<emoji id=\"6102938383456146362\">⚠️</emoji> ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
     except:
         pass
 
@@ -461,23 +461,23 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     if settings["button"]:
         btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}')] for file in files]
 
-    btn.insert(0, [InlineKeyboardButton("🔝 Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ 🔝", 'reqinfo')])
+    btn.insert(0, [InlineKeyboardButton("<emoji id=\"6100389058372966174\">🔝</emoji> Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ <emoji id=\"6100389058372966174\">🔝</emoji>", 'reqinfo')])
     btn.insert(0, [
-        InlineKeyboardButton("✨ Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
-        InlineKeyboardButton("💬 Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-        InlineKeyboardButton("🎞 Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
+        InlineKeyboardButton("<emoji id=\"6125239923831217642\">✨</emoji> Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
+        InlineKeyboardButton("<emoji id=\"6021618194228187816\">💬</emoji> Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+        InlineKeyboardButton("<emoji id=\"5937999673510858217\">🎞</emoji> Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
     ])
-    btn.insert(0, [InlineKeyboardButton("📥 Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")])
+    btn.insert(0, [InlineKeyboardButton("<emoji id=\"5776182936638329359\">📥</emoji> Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")])
 
     if offset != "":
         try:
             max_btn = 10 if settings.get('max_btn') else int(MAX_B_TN)
-            btn.append([InlineKeyboardButton("📜 ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/max_btn)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ➡️",callback_data=f"next_{req}_{key}_{offset}")])
+            btn.append([InlineKeyboardButton("<emoji id=\"5222281328258465590\">📜</emoji> ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/max_btn)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>",callback_data=f"next_{req}_{key}_{offset}")])
         except KeyError:
             await save_group_settings(query.message.chat.id, 'max_btn', True)
-            btn.append([InlineKeyboardButton("📜 ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ➡️",callback_data=f"next_{req}_{key}_{offset}")])
+            btn.append([InlineKeyboardButton("<emoji id=\"5222281328258465590\">📜</emoji> ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>",callback_data=f"next_{req}_{key}_{offset}")])
     else:
-        btn.append([InlineKeyboardButton(text="⛔️ ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ",callback_data="pages")])
+        btn.append([InlineKeyboardButton(text="<emoji id=\"5275969776668134187\">⛔️</emoji> ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ",callback_data="pages")])
 
     if not settings["button"]:
         cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
@@ -500,7 +500,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
 async def languages_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
-            return await query.answer(f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
+            return await query.answer(f"<emoji id=\"6102938383456146362\">⚠️</emoji> ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
     except:
         pass
     _, key = query.data.split("#")
@@ -515,15 +515,15 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
     valid_langs = [l for l in LANGUAGES if l.strip()]
     btn = []
     for i in range(0, len(valid_langs), 2):
-        row = [InlineKeyboardButton(text=f"💬 {valid_langs[i].title()}", callback_data=f"fl#{valid_langs[i].lower()}#{key}")]
+        row = [InlineKeyboardButton(text=f"<emoji id=\"6021618194228187816\">💬</emoji> {valid_langs[i].title()}", callback_data=f"fl#{valid_langs[i].lower()}#{key}")]
         if i+1 < len(valid_langs):
-            row.append(InlineKeyboardButton(text=f"💬 {valid_langs[i+1].title()}", callback_data=f"fl#{valid_langs[i+1].lower()}#{key}"))
+            row.append(InlineKeyboardButton(text=f"<emoji id=\"6021618194228187816\">💬</emoji> {valid_langs[i+1].title()}", callback_data=f"fl#{valid_langs[i+1].lower()}#{key}"))
         btn.append(row)
 
-    btn.insert(0, [InlineKeyboardButton(text="🔝 ꜱᴇʟᴇᴄᴛ ʟᴀɴɢᴜᴀɢᴇ 🔝", callback_data="ident")])
+    btn.insert(0, [InlineKeyboardButton(text="<emoji id=\"6100389058372966174\">🔝</emoji> ꜱᴇʟᴇᴄᴛ ʟᴀɴɢᴜᴀɢᴇ <emoji id=\"6100389058372966174\">🔝</emoji>", callback_data="ident")])
     req = query.from_user.id
     offset = 0
-    btn.append([InlineKeyboardButton(text="⬅️ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ⬅️", callback_data=f"fl#homepage#{key}")])
+    btn.append([InlineKeyboardButton(text="<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs <emoji id=\"5409010700808892424\">⬅️</emoji>", callback_data=f"fl#homepage#{key}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
 
@@ -545,7 +545,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     message = query.message
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
-            return await query.answer(f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
+            return await query.answer(f"<emoji id=\"6102938383456146362\">⚠️</emoji> ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
     except:
         pass
 
@@ -565,23 +565,23 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     if settings["button"]:
         btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}')] for file in files]
 
-    btn.insert(0, [InlineKeyboardButton("🔝 Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ 🔝", 'reqinfo')])
+    btn.insert(0, [InlineKeyboardButton("<emoji id=\"6100389058372966174\">🔝</emoji> Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ <emoji id=\"6100389058372966174\">🔝</emoji>", 'reqinfo')])
     btn.insert(0, [
-        InlineKeyboardButton("✨ Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
-        InlineKeyboardButton("💬 Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-        InlineKeyboardButton("🎞 Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
+        InlineKeyboardButton("<emoji id=\"6125239923831217642\">✨</emoji> Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
+        InlineKeyboardButton("<emoji id=\"6021618194228187816\">💬</emoji> Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+        InlineKeyboardButton("<emoji id=\"5937999673510858217\">🎞</emoji> Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
     ])
-    btn.insert(0, [InlineKeyboardButton("📥 Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")])
+    btn.insert(0, [InlineKeyboardButton("<emoji id=\"5776182936638329359\">📥</emoji> Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")])
 
     if offset != "":
         try:
             max_btn = 10 if settings.get('max_btn') else int(MAX_B_TN)
-            btn.append([InlineKeyboardButton("📜 ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/max_btn)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ➡️",callback_data=f"next_{req}_{key}_{offset}")])
+            btn.append([InlineKeyboardButton("<emoji id=\"5222281328258465590\">📜</emoji> ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/max_btn)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>",callback_data=f"next_{req}_{key}_{offset}")])
         except KeyError:
             await save_group_settings(query.message.chat.id, 'max_btn', True)
-            btn.append([InlineKeyboardButton("📜 ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ➡️",callback_data=f"next_{req}_{key}_{offset}")])
+            btn.append([InlineKeyboardButton("<emoji id=\"5222281328258465590\">📜</emoji> ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>",callback_data=f"next_{req}_{key}_{offset}")])
     else:
-        btn.append([InlineKeyboardButton(text="⛔️ ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ",callback_data="pages")])
+        btn.append([InlineKeyboardButton(text="<emoji id=\"5275969776668134187\">⛔️</emoji> ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ",callback_data="pages")])
 
     if not settings["button"]:
         cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
@@ -605,7 +605,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
 async def seasons_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
-            return await query.answer(f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
+            return await query.answer(f"<emoji id=\"6102938383456146362\">⚠️</emoji> ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
     except:
         pass
     _, key = query.data.split("#")
@@ -621,15 +621,15 @@ async def seasons_cb_handler(client: Client, query: CallbackQuery):
     valid_seasons = [s for s in SEASONS if s.strip()]
     btn = []
     for i in range(0, len(valid_seasons), 2):
-        row = [InlineKeyboardButton(text=f"🎞 {valid_seasons[i].title()}", callback_data=f"fs#{valid_seasons[i].lower()}#{key}")]
+        row = [InlineKeyboardButton(text=f"<emoji id=\"5937999673510858217\">🎞</emoji> {valid_seasons[i].title()}", callback_data=f"fs#{valid_seasons[i].lower()}#{key}")]
         if i+1 < len(valid_seasons):
-            row.append(InlineKeyboardButton(text=f"🎞 {valid_seasons[i+1].title()}", callback_data=f"fs#{valid_seasons[i+1].lower()}#{key}"))
+            row.append(InlineKeyboardButton(text=f"<emoji id=\"5937999673510858217\">🎞</emoji> {valid_seasons[i+1].title()}", callback_data=f"fs#{valid_seasons[i+1].lower()}#{key}"))
         btn.append(row)
 
-    btn.insert(0, [InlineKeyboardButton(text="🔝 ꜱᴇʟᴇᴄᴛ ꜱᴇᴀꜱᴏɴ 🔝", callback_data="ident")])
+    btn.insert(0, [InlineKeyboardButton(text="<emoji id=\"6100389058372966174\">🔝</emoji> ꜱᴇʟᴇᴄᴛ ꜱᴇᴀꜱᴏɴ <emoji id=\"6100389058372966174\">🔝</emoji>", callback_data="ident")])
     req = query.from_user.id
     offset = 0
-    btn.append([InlineKeyboardButton(text="⬅️ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ⬅️", callback_data=f"next_{req}_{key}_{offset}")])
+    btn.append([InlineKeyboardButton(text="<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs <emoji id=\"5409010700808892424\">⬅️</emoji>", callback_data=f"next_{req}_{key}_{offset}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
 
@@ -658,7 +658,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     message = query.message
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
-            return await query.answer(f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
+            return await query.answer(f"<emoji id=\"6102938383456146362\">⚠️</emoji> ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇsᴛ,\nʀᴇǫᴜᴇsᴛ ʏᴏᴜʀ'ꜱ...", show_alert=True)
     except:
         pass
 
@@ -699,18 +699,18 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     btn = []
     if settings["button"]:
         btn = [[InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@') and not x.startswith('www.'), file.file_name.split()))}", callback_data=f'{pre}#{file.file_id}')] for file in files]
-        btn.insert(0, [InlineKeyboardButton("🔁 ꜱᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")])
+        btn.insert(0, [InlineKeyboardButton("<emoji id=\"6030657343744644592\">🔁</emoji> ꜱᴇʟᴇᴄᴛ ᴀɢᴀɪɴ", callback_data=f"seasons#{key}")])
     else:
-        btn.insert(0, [InlineKeyboardButton("🔝 Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ 🔝", 'reqinfo')])
+        btn.insert(0, [InlineKeyboardButton("<emoji id=\"6100389058372966174\">🔝</emoji> Sᴇʟᴇᴄᴛ Oᴘᴛɪᴏɴ Hᴇʀᴇ <emoji id=\"6100389058372966174\">🔝</emoji>", 'reqinfo')])
         btn.insert(0, [
-            InlineKeyboardButton("✨ Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
-            InlineKeyboardButton("💬 Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
-            InlineKeyboardButton("🎞 Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
+            InlineKeyboardButton("<emoji id=\"6125239923831217642\">✨</emoji> Qᴜᴀʟɪᴛʏ", callback_data=f"qualities#{key}"),
+            InlineKeyboardButton("<emoji id=\"6021618194228187816\">💬</emoji> Lᴀɴɢᴜᴀɢᴇ", callback_data=f"languages#{key}"),
+            InlineKeyboardButton("<emoji id=\"5937999673510858217\">🎞</emoji> Sᴇᴀsᴏɴ",  callback_data=f"seasons#{key}")
         ])
-        btn.insert(0, [InlineKeyboardButton("📥 Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")])
+        btn.insert(0, [InlineKeyboardButton("<emoji id=\"5776182936638329359\">📥</emoji> Sᴇɴᴅ Aʟʟ", callback_data=f"sendfiles#{key}")])
 
     offset = offset if offset else ""
-    btn.append([InlineKeyboardButton(text="⬅️ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ⬅️", callback_data=f"next_{req}_{key}_{offset}")])
+    btn.append([InlineKeyboardButton(text="<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs <emoji id=\"5409010700808892424\">⬅️</emoji>", callback_data=f"next_{req}_{key}_{offset}")])
 
     if not settings["button"]:
         cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
@@ -817,12 +817,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
-             InlineKeyboardButton("🗑️ ᴅᴇʟᴇᴛᴇ", callback_data=f"deletecb:{group_id}")],
-            [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="backcb")]
+             InlineKeyboardButton("<emoji id=\"6129486856212979482\">🗑️</emoji> ᴅᴇʟᴇᴛᴇ", callback_data=f"deletecb:{group_id}")],
+            [InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data="backcb")]
         ])
 
         await query.message.edit_text(
-            f"Gʀᴏᴜᴘ Nᴀᴍᴇ : **{title}**\nGʀᴏᴜᴘ ID : `{group_id}`",
+            f"Gʀᴏᴜ Name : **{title}**\nGʀᴏᴜᴘ ID : `{group_id}`",
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
@@ -1045,7 +1045,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     "Pʟᴇᴀsᴇ ᴊᴏɪɴ ᴇᴀᴄʜ ᴄʜᴀɴɴᴇʟ ʟɪsᴛᴇᴅ ʙᴇʟᴏᴡ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.\n\n",
                     show_alert=True
                 )
-                btn.append([InlineKeyboardButton("🔁 ᴛʀʏ ᴀɢᴀɪɴ 🔁", callback_data=f"checksub#{kk}#{file_id}")])
+                btn.append([InlineKeyboardButton("<emoji id=\"6030657343744644592\">🔁</emoji> ᴛʀʏ ᴀɢᴀɪɴ <emoji id=\"6030657343744644592\">🔁</emoji>", callback_data=f"checksub#{kk}#{file_id}")])
                 await query.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(btn))
                 return
         await query.answer(url=f"https://t.me/{temp.U_NAME}?start={kk}_{file_id}")
@@ -1131,46 +1131,46 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ʀᴇꜱᴜʟᴛ ᴘᴀɢᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ʙᴜᴛᴛᴏɴ" if settings["button"] else "❌ ᴛᴇxᴛ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ʙᴜᴛᴛᴏɴ" if settings["button"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴛᴇxᴛ",
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ꜱᴛᴀʀᴛ" if settings["botpm"] else "❌ ᴀᴜᴛᴏ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ꜱᴛᴀʀᴛ" if settings["botpm"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴀᴜᴛᴏ",
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["file_secure"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["file_secure"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ɪᴍᴅʙ ᴘᴏꜱᴛᴇʀ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["imdb"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["imdb"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["spell_check"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["spell_check"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ ᴍꜱɢ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["welcome"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["welcome"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ',
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}')
                 ],
                 [
@@ -1182,17 +1182,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('📡 FTM Gamma Mode',
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ Enabled" if settings.get("ftm_gamma_mode", False) else "❌ Disabled",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> Enabled" if settings.get("ftm_gamma_mode", False) else f"<emoji id=\"6271611232457855630\">❌</emoji> Disabled",
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton("🛑 ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
+                    InlineKeyboardButton("<emoji id=\"6271674836628541366\">🛑</emoji> ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
                                          callback_data='close_data'
                                          )
                 ]
@@ -1219,7 +1219,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         title = query.message.chat.title
         settings = await get_settings(grp_id)
         btn2 = [[
-                 InlineKeyboardButton("💬 ᴄʜᴇᴄᴋ ᴍʏ ᴅᴍ", url=f"telegram.me/{temp.U_NAME}")
+                 InlineKeyboardButton("<emoji id=\"6021618194228187816\">💬</emoji> ᴄʜᴇᴄᴋ ᴍʏ ᴅᴍ", url=f"telegram.me/{temp.U_NAME}")
                ]]
         reply_markup = InlineKeyboardMarkup(btn2)
         await query.message.edit_text(f"<b>ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ ғᴏʀ {title} ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʏᴏᴜ ʙʏ ᴅᴍ.</b>")
@@ -1229,46 +1229,46 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ʀᴇꜱᴜʟᴛ ᴘᴀɢᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ʙᴜᴛᴛᴏɴ" if settings["button"] else "❌ ᴛᴇxᴛ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ʙᴜᴛᴛᴏɴ" if settings["button"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴛᴇxᴛ",
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ꜱᴛᴀʀᴛ" if settings["botpm"] else "❌ ᴀᴜᴛᴏ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ꜱᴛᴀʀᴛ" if settings["botpm"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴀᴜᴛᴏ",
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["file_secure"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["file_secure"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ɪᴍᴅʙ ᴘᴏꜱᴛᴇʀ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["imdb"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["imdb"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["spell_check"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["spell_check"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ ᴍꜱɢ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["welcome"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["welcome"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ',
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}')
                 ],
                 [
@@ -1280,17 +1280,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('📡 FTM Gamma Mode',
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ Enabled" if settings.get("ftm_gamma_mode", False) else "❌ Disabled",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> Enabled" if settings.get("ftm_gamma_mode", False) else f"<emoji id=\"6271611232457855630\">❌</emoji> Disabled",
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton("🛑 ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
+                    InlineKeyboardButton("<emoji id=\"6271674836628541366\">🛑</emoji> ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
                                          callback_data='close_data'
                                          )
                 ]
@@ -1308,18 +1308,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("show_option"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⚠️ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unavailable#{from_user}"),
-                InlineKeyboardButton("🟢 ᴜᴘʟᴏᴀᴅᴇᴅ 🟢", callback_data=f"uploaded#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6102938383456146362\">⚠️</emoji> ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6102938383456146362\">⚠️</emoji>", callback_data=f"unavailable#{from_user}"),
+                InlineKeyboardButton("<emoji id=\"6113685078825505075\">🟢</emoji> ᴜᴘʟᴏᴀᴅᴇᴅ <emoji id=\"6113685078825505075\">🟢</emoji>", callback_data=f"uploaded#{from_user}")
              ],[
-                InlineKeyboardButton("🔁 ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🔁", callback_data=f"already_available#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6030657343744644592\">🔁</emoji> ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6030657343744644592\">🔁</emoji>", callback_data=f"already_available#{from_user}")
              ],[
-                InlineKeyboardButton("📌 Not Released 📌", callback_data=f"Not_Released#{from_user}"),
-                InlineKeyboardButton("📝 Type Correct Spelling 📝", callback_data=f"Type_Correct_Spelling#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6100424015111787987\">📌</emoji> Not Released <emoji id=\"6100424015111787987\">📌</emoji>", callback_data=f"Not_Released#{from_user}"),
+                InlineKeyboardButton("<emoji id=\"5370546867786523009\">📝</emoji> Type Correct Spelling <emoji id=\"5370546867786523009\">📝</emoji>", callback_data=f"Type_Correct_Spelling#{from_user}")
              ],[
-                InlineKeyboardButton("⛔️ Not Available In The Hindi ⛔️", callback_data=f"Not_Available_In_The_Hindi#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5275969776668134187\">⛔️</emoji> Not Available In The Hindi <emoji id=\"5275969776668134187\">⛔️</emoji>", callback_data=f"Not_Available_In_The_Hindi#{from_user}")
              ]]
         btn2 = [[
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1332,11 +1332,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("unavailable"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⚠️ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6102938383456146362\">⚠️</emoji> ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6102938383456146362\">⚠️</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1355,11 +1355,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Not_Released"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("📌 Not Released 📌", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6100424015111787987\">📌</emoji> Not Released <emoji id=\"6100424015111787987\">📌</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1378,11 +1378,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Type_Correct_Spelling"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("📝 Type Correct Spelling 📝", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5370546867786523009\">📝</emoji> Type Correct Spelling <emoji id=\"5370546867786523009\">📝</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1401,11 +1401,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Not_Available_In_The_Hindi"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⛔️ Not Available In The Hindi ⛔️", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5275969776668134187\">⛔️</emoji> Not Available In The Hindi <emoji id=\"5275969776668134187\">⛔️</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1424,13 +1424,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("uploaded"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("🟢 ᴜᴘʟᴏᴀᴅᴇᴅ 🟢", callback_data=f"upalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6113685078825505075\">🟢</emoji> ᴜᴘʟᴏᴀᴅᴇᴅ <emoji id=\"6113685078825505075\">🟢</emoji>", callback_data=f"upalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔎 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ <emoji id=\"5429571366384842791\">🔎</emoji>", url=GRP_LNK)
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1449,13 +1449,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("already_available"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("🔁 ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🔁", callback_data=f"alalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6030657343744644592\">🔁</emoji> ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6030657343744644592\">🔁</emoji>", callback_data=f"alalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔎 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ <emoji id=\"5429571366384842791\">🔎</emoji>", url=GRP_LNK)
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1518,15 +1518,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('📺 Watch online 📺', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("<emoji id=\"6172332822892647766\">🚀</emoji> Fast Download <emoji id=\"6172332822892647766\">🚀</emoji>", url=lazy_download),
+                            InlineKeyboardButton("<emoji id=\"6044356915029348425\">📺</emoji> Watch online <emoji id=\"6044356915029348425\">📺</emoji>", url=lazy_stream)
+                        ]
+                    ]
+                )
             )
             ftmbotzx = await query.message.reply_text(
                 text="<emoji id=\"6280269890821558384\">✅</emoji> ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('📺 Watch online 📺', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("<emoji id=\"6172332822892647766\">🚀</emoji> Fast Download <emoji id=\"6172332822892647766\">🚀</emoji>", url=lazy_download),
+                            InlineKeyboardButton("<emoji id=\"6044356915029348425\">📺</emoji> Watch online <emoji id=\"6044356915029348425\">📺</emoji>", url=lazy_stream)
+                        ]
+                    ]
+                )
             )  
 
             await asyncio.sleep(120)  # Adjust the delay as needed
@@ -1554,15 +1566,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('<emoji id=\"6100125944381444896\">➕</emoji> ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ <emoji id=\"6100125944381444896\">➕</emoji>', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🔎 Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ 🤙', callback_data='channels')
+                    InlineKeyboardButton('<emoji id=\"5429571366384842791\">🔎</emoji> Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
+                    InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ <emoji id=\"5258337316715373336\">🤙</emoji>', callback_data='channels')
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ 🚨', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓ ', callback_data='about')
+                    InlineKeyboardButton(' ʜᴇʟᴘ <emoji id=\"6129532640564354033\">🚨</emoji>', callback_data='help'),
+                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ <emoji id=\"5188540541922480562\">❓</emoji> ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ.. 💰', callback_data="shortlink_info")
+                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ.. <emoji id=\"5208796423734186661\">💰</emoji>', callback_data="shortlink_info")
                 ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1590,13 +1602,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('🍿 Mᴏᴠɪᴇ Gʀᴏᴜᴘ ', url=GRP_LNK),
-            InlineKeyboardButton('📂 ʙᴀᴄᴋᴜᴘ', url=CHNL_LNK)
+            InlineKeyboardButton('<emoji id=\"5873066287755695060\">🍿</emoji> Mᴏᴠɪᴇ Gʀᴏᴜᴘ ', url=GRP_LNK),
+            InlineKeyboardButton('<emoji id=\"5258389041006518073\">📂</emoji> ʙᴀᴄᴋᴜᴘ', url=CHNL_LNK)
         ],[
-            InlineKeyboardButton('📢 Mᴏᴠɪᴇ Nᴏᴛɪғɪᴄᴀᴛɪᴏɴ ', url=FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK),
+            InlineKeyboardButton('<emoji id=\"6039381989985882045\">📢</emoji> Mᴏᴠɪᴇ Nᴏᴛɪғɪᴄᴀᴛɪᴏɴ ', url=FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK),
         ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='start'),
-            InlineKeyboardButton('💡 Cᴏɴᴛᴀᴄᴛ ', url=OWNER_LNK)
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start'),
+            InlineKeyboardButton('<emoji id=\"5767288287001580715\">💡</emoji> Cᴏɴᴛᴀᴄᴛ ', url=OWNER_LNK)
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1607,7 +1619,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "users":
         buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1618,7 +1630,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "group":
         buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1633,8 +1645,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return await query.answer("⚠️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀ ʙᴏᴛ ᴀᴅᴍɪɴ !", show_alert=True)
         page = 0  
         buttons = [
-            [InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}')],
-            [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]
+            [InlineKeyboardButton('Next <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data=f'admic_next_{page}')],
+            [InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1650,12 +1662,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         buttons = []
         if page > 0:
-            buttons.append(InlineKeyboardButton('Previous ⬅️', callback_data=f'admic_prev_{page}'))
+            buttons.append(InlineKeyboardButton('Previous <emoji id=\"5409010700808892424\">⬅️</emoji>', callback_data=f'admic_prev_{page}'))
 
         if page < len(commands) - 1:
-            buttons.append(InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}'))
+            buttons.append(InlineKeyboardButton('Next <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data=f'admic_next_{page}'))
 
-        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]])
+        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')]])
         await query.message.edit_text(
             text=commands[page],
             reply_markup=reply_markup,
@@ -1669,12 +1681,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         buttons = []
         if page > 0:
-            buttons.append(InlineKeyboardButton('Previous ⬅️', callback_data=f'admic_prev_{page}'))
+            buttons.append(InlineKeyboardButton('Previous <emoji id=\"5409010700808892424\">⬅️</emoji>', callback_data=f'admic_prev_{page}'))
 
         if page < len(commands) - 1:
-            buttons.append(InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}'))
+            buttons.append(InlineKeyboardButton('Next <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data=f'admic_next_{page}'))
 
-        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]])
+        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')]])
         await query.message.edit_text(
             text=commands[page],
             reply_markup=reply_markup,
@@ -1684,18 +1696,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('🛠 Aᴅᴍɪɴ', callback_data='admic')
+            InlineKeyboardButton('<emoji id=\"5462921117423384478\">🛠</emoji> Aᴅᴍɪɴ', callback_data='admic')
         ],[
-            InlineKeyboardButton('👤 ᴜꜱᴇʀ', callback_data='users'),
-            InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', callback_data='group')
+            InlineKeyboardButton('<emoji id=\"5258011929993026890\">👤</emoji> ᴜꜱᴇʀ', callback_data='users'),
+            InlineKeyboardButton('<emoji id=\"6032609071373226027\">👥</emoji> ɢʀᴏᴜᴘ', callback_data='group')
         ],[
-            InlineKeyboardButton ('🏷 sᴛɪᴄᴋᴇʀ ɪᴅ', callback_data='sticker'),
-            InlineKeyboardButton('✨ ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
+            InlineKeyboardButton ('<emoji id=\"6260059243605398502\">🏷</emoji> sᴛɪᴄᴋᴇʀ ɪᴅ', callback_data='sticker'),
+            InlineKeyboardButton('<emoji id=\"6125239923831217642\">✨</emoji> ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
         ],[
-            InlineKeyboardButton('📝 ғᴏɴᴛ', callback_data='font'),
-            InlineKeyboardButton('✨ Jsᴏɴ', callback_data='json')
+            InlineKeyboardButton('<emoji id=\"5370546867786523009\">📝</emoji> ғᴏɴᴛ', callback_data='font'),
+            InlineKeyboardButton('<emoji id=\"6125239923831217642\">✨</emoji> Jsᴏɴ', callback_data='json')
         ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1705,10 +1717,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('⚠️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ⚠️', callback_data='disclaimer'),
-            InlineKeyboardButton ('✨ sᴏᴜʀᴄᴇ', callback_data='source'),
+            InlineKeyboardButton('<emoji id=\"6102938383456146362\">⚠️</emoji> ᴅɪꜱᴄʟᴀɪᴍᴇʀ <emoji id=\"6102938383456146362\">⚠️</emoji>', callback_data='disclaimer'),
+            InlineKeyboardButton ('<emoji id=\"6125239923831217642\">✨</emoji> sᴏᴜʀᴄᴇ', callback_data='source'),
         ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1719,8 +1731,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 📜', url='https://t.me/Hidden_Xman'),
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='about')
+            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ <emoji id=\"5222281328258465590\">📜</emoji>', url='https://t.me/Hidden_Xman'),
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1732,7 +1744,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "json":
         buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1758,7 +1770,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "sticker":
             btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="help")                    
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="help")                    
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1773,7 +1785,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "tele":
             btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="help"),
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data="help"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
                   ]]
             await client.edit_message_media(
@@ -1790,7 +1802,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "font":
             btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="help")
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="help")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -1807,9 +1819,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("1 / 3", callback_data="pagesn1"),
-                    InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="shortlink_info2")
+                    InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="shortlink_info2")
                     ],[
-                    InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+                    InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
                     ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1819,11 +1831,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )   
     elif query.data == "shortlink_info2":
             btn = [[
-            InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="shortlink_info"),
+            InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data="shortlink_info"),
             InlineKeyboardButton("2 / 3", callback_data="pagesn1"),
-            InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="shortlink_info3")
+            InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="shortlink_info3")
             ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1833,10 +1845,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "shortlink_info3":
             btn = [[
-            InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="shortlink_info2"),
+            InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data="shortlink_info2"),
             InlineKeyboardButton("3 / 3", callback_data="pagesn1")
             ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1847,7 +1859,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "disclaimer":
             btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="about")
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="about")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -1878,46 +1890,46 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ʀᴇꜱᴜʟᴛ ᴘᴀɢᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ʙᴜᴛᴛᴏɴ" if settings["button"] else "❌ ᴛᴇxᴛ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ʙᴜᴛᴛᴏɴ" if settings["button"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴛᴇxᴛ",
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ꜱᴛᴀʀᴛ" if settings["botpm"] else "❌ ᴀᴜᴛᴏ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ꜱᴛᴀʀᴛ" if settings["botpm"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴀᴜᴛᴏ",
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["file_secure"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["file_secure"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ɪᴍᴅʙ ᴘᴏꜱᴛᴇʀ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["imdb"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["imdb"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["spell_check"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["spell_check"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ ᴍꜱɢ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["welcome"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["welcome"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ',
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}')
                 ],
                 [
@@ -1929,17 +1941,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('📡 FTM Gamma Mode',
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ Enabled" if settings.get("ftm_gamma_mode", False) else "❌ Disabled",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> Enabled" if settings.get("ftm_gamma_mode", False) else f"<emoji id=\"6271611232457855630\">❌</emoji> Disabled",
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton("🛑 ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
+                    InlineKeyboardButton("<emoji id=\"6271674836628541366\">🛑</emoji> ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
                                          callback_data='close_data'
                                          )
                 ]
@@ -1966,7 +1978,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         title = query.message.chat.title
         settings = await get_settings(grp_id)
         btn2 = [[
-                 InlineKeyboardButton("💬 ᴄʜᴇᴄᴋ ᴍʏ ᴅᴍ", url=f"telegram.me/{temp.U_NAME}")
+                 InlineKeyboardButton("<emoji id=\"6021618194228187816\">💬</emoji> ᴄʜᴇᴄᴋ ᴍʏ ᴅᴍ", url=f"telegram.me/{temp.U_NAME}")
                ]]
         reply_markup = InlineKeyboardMarkup(btn2)
         await query.message.edit_text(f"<b>ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ ғᴏʀ {title} ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʏᴏᴜ ʙʏ ᴅᴍ.</b>")
@@ -1976,46 +1988,46 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ʀᴇꜱᴜʟᴛ ᴘᴀɢᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ʙᴜᴛᴛᴏɴ" if settings["button"] else "❌ ᴛᴇxᴛ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ʙᴜᴛᴛᴏɴ" if settings["button"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴛᴇxᴛ",
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ꜱᴛᴀʀᴛ" if settings["botpm"] else "❌ ᴀᴜᴛᴏ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ꜱᴛᴀʀᴛ" if settings["botpm"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴀᴜᴛᴏ",
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["file_secure"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["file_secure"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ɪᴍᴅʙ ᴘᴏꜱᴛᴇʀ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["imdb"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["imdb"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["spell_check"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["spell_check"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ ᴍꜱɢ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["welcome"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["welcome"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ',
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}')
                 ],
                 [
@@ -2027,17 +2039,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('📡 FTM Gamma Mode',
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ Enabled" if settings.get("ftm_gamma_mode", False) else "❌ Disabled",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> Enabled" if settings.get("ftm_gamma_mode", False) else f"<emoji id=\"6271611232457855630\">❌</emoji> Disabled",
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton("🛑 ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
+                    InlineKeyboardButton("<emoji id=\"6271674836628541366\">🛑</emoji> ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
                                          callback_data='close_data'
                                          )
                 ]
@@ -2055,18 +2067,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("show_option"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⚠️ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unavailable#{from_user}"),
-                InlineKeyboardButton("🟢 ᴜᴘʟᴏᴀᴅᴇᴅ 🟢", callback_data=f"uploaded#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6102938383456146362\">⚠️</emoji> ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6102938383456146362\">⚠️</emoji>", callback_data=f"unavailable#{from_user}"),
+                InlineKeyboardButton("<emoji id=\"6113685078825505075\">🟢</emoji> ᴜᴘʟᴏᴀᴅᴇᴅ <emoji id=\"6113685078825505075\">🟢</emoji>", callback_data=f"uploaded#{from_user}")
              ],[
-                InlineKeyboardButton("🔁 ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🔁", callback_data=f"already_available#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6030657343744644592\">🔁</emoji> ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6030657343744644592\">🔁</emoji>", callback_data=f"already_available#{from_user}")
              ],[
-                InlineKeyboardButton("📌 Not Released 📌", callback_data=f"Not_Released#{from_user}"),
-                InlineKeyboardButton("📝 Type Correct Spelling 📝", callback_data=f"Type_Correct_Spelling#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6100424015111787987\">📌</emoji> Not Released <emoji id=\"6100424015111787987\">📌</emoji>", callback_data=f"Not_Released#{from_user}"),
+                InlineKeyboardButton("<emoji id=\"5370546867786523009\">📝</emoji> Type Correct Spelling <emoji id=\"5370546867786523009\">📝</emoji>", callback_data=f"Type_Correct_Spelling#{from_user}")
              ],[
-                InlineKeyboardButton("⛔️ Not Available In The Hindi ⛔️", callback_data=f"Not_Available_In_The_Hindi#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5275969776668134187\">⛔️</emoji> Not Available In The Hindi <emoji id=\"5275969776668134187\">⛔️</emoji>", callback_data=f"Not_Available_In_The_Hindi#{from_user}")
              ]]
         btn2 = [[
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2079,11 +2091,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("unavailable"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⚠️ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6102938383456146362\">⚠️</emoji> ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6102938383456146362\">⚠️</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2102,11 +2114,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Not_Released"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("📌 Not Released 📌", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6100424015111787987\">📌</emoji> Not Released <emoji id=\"6100424015111787987\">📌</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2125,11 +2137,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Type_Correct_Spelling"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("📝 Type Correct Spelling 📝", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5370546867786523009\">📝</emoji> Type Correct Spelling <emoji id=\"5370546867786523009\">📝</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2148,11 +2160,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Not_Available_In_The_Hindi"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⛔️ Not Available In The Hindi ⛔️", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5275969776668134187\">⛔️</emoji> Not Available In The Hindi <emoji id=\"5275969776668134187\">⛔️</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2171,13 +2183,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("uploaded"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("🟢 ᴜᴘʟᴏᴀᴅᴇᴅ 🟢", callback_data=f"upalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6113685078825505075\">🟢</emoji> ᴜᴘʟᴏᴀᴅᴇᴅ <emoji id=\"6113685078825505075\">🟢</emoji>", callback_data=f"upalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔎 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ <emoji id=\"5429571366384842791\">🔎</emoji>", url=GRP_LNK)
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2196,13 +2208,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("already_available"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("🔁 ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🔁", callback_data=f"alalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6030657343744644592\">🔁</emoji> ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6030657343744644592\">🔁</emoji>", callback_data=f"alalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔎 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ <emoji id=\"5429571366384842791\">🔎</emoji>", url=GRP_LNK)
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2265,15 +2277,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('📺 Watch online 📺', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("<emoji id=\"6172332822892647766\">🚀</emoji> Fast Download <emoji id=\"6172332822892647766\">🚀</emoji>", url=lazy_download),
+                            InlineKeyboardButton("<emoji id=\"6044356915029348425\">📺</emoji> Watch online <emoji id=\"6044356915029348425\">📺</emoji>", url=lazy_stream)
+                        ]
+                    ]
+                )
             )
             ftmbotzx = await query.message.reply_text(
                 text="<emoji id=\"6280269890821558384\">✅</emoji> ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('📺 Watch online 📺', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("<emoji id=\"6172332822892647766\">🚀</emoji> Fast Download <emoji id=\"6172332822892647766\">🚀</emoji>", url=lazy_download),
+                            InlineKeyboardButton("<emoji id=\"6044356915029348425\">📺</emoji> Watch online <emoji id=\"6044356915029348425\">📺</emoji>", url=lazy_stream)
+                        ]
+                    ]
+                )
             )  
 
             await asyncio.sleep(120)  # Adjust the delay as needed
@@ -2301,15 +2325,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('<emoji id=\"6100125944381444896\">➕</emoji> ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ <emoji id=\"6100125944381444896\">➕</emoji>', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🔎 Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ 🤙', callback_data='channels')
+                    InlineKeyboardButton('<emoji id=\"5429571366384842791\">🔎</emoji> Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
+                    InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ <emoji id=\"5258337316715373336\">🤙</emoji>', callback_data='channels')
                 ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ 🚨', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓ ', callback_data='about')
+                    InlineKeyboardButton(' ʜᴇʟᴘ <emoji id=\"6129532640564354033\">🚨</emoji>', callback_data='help'),
+                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ <emoji id=\"5188540541922480562\">❓</emoji> ', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ.. 💰', callback_data="shortlink_info")
+                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ.. <emoji id=\"5208796423734186661\">💰</emoji>', callback_data="shortlink_info")
                 ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -2337,13 +2361,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "channels":
         buttons = [[
-            InlineKeyboardButton('🍿 Mᴏᴠɪᴇ Gʀᴏᴜᴘ ', url=GRP_LNK),
-            InlineKeyboardButton('📂 ʙᴀᴄᴋᴜᴘ', url=CHNL_LNK)
+            InlineKeyboardButton('<emoji id=\"5873066287755695060\">🍿</emoji> Mᴏᴠɪᴇ Gʀᴏᴜᴘ ', url=GRP_LNK),
+            InlineKeyboardButton('<emoji id=\"5258389041006518073\">📂</emoji> ʙᴀᴄᴋᴜᴘ', url=CHNL_LNK)
         ],[
-            InlineKeyboardButton('📢 Mᴏᴠɪᴇ Nᴏᴛɪғɪᴄᴀᴛɪᴏɴ ', url=FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK),
+            InlineKeyboardButton('<emoji id=\"6039381989985882045\">📢</emoji> Mᴏᴠɪᴇ Nᴏᴛɪғɪᴄᴀᴛɪᴏɴ ', url=FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK),
         ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='start'),
-            InlineKeyboardButton('💡 Cᴏɴᴛᴀᴄᴛ ', url=OWNER_LNK)
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start'),
+            InlineKeyboardButton('<emoji id=\"5767288287001580715\">💡</emoji> Cᴏɴᴛᴀᴄᴛ ', url=OWNER_LNK)
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2354,7 +2378,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "users":
         buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2365,7 +2389,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "group":
         buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2380,8 +2404,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             return await query.answer("⚠️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀ ʙᴏᴛ ᴀᴅᴍɪɴ !", show_alert=True)
         page = 0  
         buttons = [
-            [InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}')],
-            [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]
+            [InlineKeyboardButton('Next <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data=f'admic_next_{page}')],
+            [InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')]
         ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2397,12 +2421,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         buttons = []
         if page > 0:
-            buttons.append(InlineKeyboardButton('Previous ⬅️', callback_data=f'admic_prev_{page}'))
+            buttons.append(InlineKeyboardButton('Previous <emoji id=\"5409010700808892424\">⬅️</emoji>', callback_data=f'admic_prev_{page}'))
 
         if page < len(commands) - 1:
-            buttons.append(InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}'))
+            buttons.append(InlineKeyboardButton('Next <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data=f'admic_next_{page}'))
 
-        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]])
+        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')]])
         await query.message.edit_text(
             text=commands[page],
             reply_markup=reply_markup,
@@ -2416,12 +2440,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         buttons = []
         if page > 0:
-            buttons.append(InlineKeyboardButton('Previous ⬅️', callback_data=f'admic_prev_{page}'))
+            buttons.append(InlineKeyboardButton('Previous <emoji id=\"5409010700808892424\">⬅️</emoji>', callback_data=f'admic_prev_{page}'))
 
         if page < len(commands) - 1:
-            buttons.append(InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}'))
+            buttons.append(InlineKeyboardButton('Next <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data=f'admic_next_{page}'))
 
-        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]])
+        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')]])
         await query.message.edit_text(
             text=commands[page],
             reply_markup=reply_markup,
@@ -2431,18 +2455,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('🛠 Aᴅᴍɪɴ', callback_data='admic')
+            InlineKeyboardButton('<emoji id=\"5462921117423384478\">🛠</emoji> Aᴅᴍɪɴ', callback_data='admic')
         ],[
-            InlineKeyboardButton('👤 ᴜꜱᴇʀ', callback_data='users'),
-            InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', callback_data='group')
+            InlineKeyboardButton('<emoji id=\"5258011929993026890\">👤</emoji> ᴜꜱᴇʀ', callback_data='users'),
+            InlineKeyboardButton('<emoji id=\"6032609071373226027\">👥</emoji> ɢʀᴏᴜᴘ', callback_data='group')
         ],[
-            InlineKeyboardButton ('🏷 sᴛɪᴄᴋᴇʀ ɪᴅ', callback_data='sticker'),
-            InlineKeyboardButton('✨ ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
+            InlineKeyboardButton ('<emoji id=\"6260059243605398502\">🏷</emoji> sᴛɪᴄᴋᴇʀ ɪᴅ', callback_data='sticker'),
+            InlineKeyboardButton('<emoji id=\"6125239923831217642\">✨</emoji> ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
         ],[
-            InlineKeyboardButton('📝 ғᴏɴᴛ', callback_data='font'),
-            InlineKeyboardButton('✨ Jsᴏɴ', callback_data='json')
+            InlineKeyboardButton('<emoji id=\"5370546867786523009\">📝</emoji> ғᴏɴᴛ', callback_data='font'),
+            InlineKeyboardButton('<emoji id=\"6125239923831217642\">✨</emoji> Jsᴏɴ', callback_data='json')
         ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2452,10 +2476,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('⚠️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ⚠️', callback_data='disclaimer'),
-            InlineKeyboardButton ('✨ sᴏᴜʀᴄᴇ', callback_data='source'),
+            InlineKeyboardButton('<emoji id=\"6102938383456146362\">⚠️</emoji> ᴅɪꜱᴄʟᴀɪᴍᴇʀ <emoji id=\"6102938383456146362\">⚠️</emoji>', callback_data='disclaimer'),
+            InlineKeyboardButton ('<emoji id=\"6125239923831217642\">✨</emoji> sᴏᴜʀᴄᴇ', callback_data='source'),
         ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2466,8 +2490,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 📜', url='https://t.me/Hidden_Xman'),
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='about')
+            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ <emoji id=\"5222281328258465590\">📜</emoji>', url='https://t.me/Hidden_Xman'),
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2479,7 +2503,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "json":
         buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -2505,7 +2529,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "sticker":
             btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="help")                    
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="help")                    
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2520,7 +2544,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "tele":
             btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="help"),
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data="help"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
                   ]]
             await client.edit_message_media(
@@ -2537,7 +2561,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "font":
             btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="help")
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="help")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
@@ -2554,9 +2578,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "shortlink_info":
             btn = [[
                     InlineKeyboardButton("1 / 3", callback_data="pagesn1"),
-                    InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="shortlink_info2")
+                    InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="shortlink_info2")
                     ],[
-                    InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+                    InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
                     ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -2566,11 +2590,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )   
     elif query.data == "shortlink_info2":
             btn = [[
-            InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="shortlink_info"),
+            InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data="shortlink_info"),
             InlineKeyboardButton("2 / 3", callback_data="pagesn1"),
-            InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="shortlink_info3")
+            InlineKeyboardButton("ɴᴇxᴛ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="shortlink_info3")
             ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -2580,10 +2604,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
     elif query.data == "shortlink_info3":
             btn = [[
-            InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="shortlink_info2"),
+            InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ", callback_data="shortlink_info2"),
             InlineKeyboardButton("3 / 3", callback_data="pagesn1")
             ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
+            InlineKeyboardButton('<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ <emoji id=\"5408834199127864608\">➡️</emoji>', callback_data='start')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -2594,7 +2618,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "disclaimer":
             btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="about")
+                    InlineKeyboardButton("<emoji id=\"5409010700808892424\">⬅️</emoji> ʙᴀᴄᴋ <emoji id=\"5408834199127864608\">➡️</emoji>", callback_data="about")
                   ]]
             reply_markup = InlineKeyboardMarkup(btn)
             await query.message.edit_text(
@@ -2625,46 +2649,46 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ʀᴇꜱᴜʟᴛ ᴘᴀɢᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ʙᴜᴛᴛᴏɴ" if settings["button"] else "❌ ᴛᴇxᴛ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ʙᴜᴛᴛᴏɴ" if settings["button"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴛᴇxᴛ",
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ꜱᴛᴀʀᴛ" if settings["botpm"] else "❌ ᴀᴜᴛᴏ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ꜱᴛᴀʀᴛ" if settings["botpm"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴀᴜᴛᴏ",
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["file_secure"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["file_secure"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ɪᴍᴅʙ ᴘᴏꜱᴛᴇʀ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["imdb"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["imdb"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["spell_check"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["spell_check"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ ᴍꜱɢ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["welcome"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["welcome"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ',
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}')
                 ],
                 [
@@ -2676,17 +2700,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('📡 FTM Gamma Mode',
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ Enabled" if settings.get("ftm_gamma_mode", False) else "❌ Disabled",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> Enabled" if settings.get("ftm_gamma_mode", False) else f"<emoji id=\"6271611232457855630\">❌</emoji> Disabled",
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton("🛑 ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
+                    InlineKeyboardButton("<emoji id=\"6271674836628541366\">🛑</emoji> ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
                                          callback_data='close_data'
                                          )
                 ]
@@ -2713,7 +2737,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         title = query.message.chat.title
         settings = await get_settings(grp_id)
         btn2 = [[
-                 InlineKeyboardButton("💬 ᴄʜᴇᴄᴋ ᴍʏ ᴅᴍ", url=f"telegram.me/{temp.U_NAME}")
+                 InlineKeyboardButton("<emoji id=\"6021618194228187816\">💬</emoji> ᴄʜᴇᴄᴋ ᴍʏ ᴅᴍ", url=f"telegram.me/{temp.U_NAME}")
                ]]
         reply_markup = InlineKeyboardMarkup(btn2)
         await query.message.edit_text(f"<b>ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ ғᴏʀ {title} ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʏᴏᴜ ʙʏ ᴅᴍ.</b>")
@@ -2723,46 +2747,46 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ʀᴇꜱᴜʟᴛ ᴘᴀɢᴇ',
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ʙᴜᴛᴛᴏɴ" if settings["button"] else "❌ ᴛᴇxᴛ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ʙᴜᴛᴛᴏɴ" if settings["button"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴛᴇxᴛ",
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ꜱᴛᴀʀᴛ" if settings["botpm"] else "❌ ᴀᴜᴛᴏ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ꜱᴛᴀʀᴛ" if settings["botpm"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴀᴜᴛᴏ",
                                          callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["file_secure"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["file_secure"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ɪᴍᴅʙ ᴘᴏꜱᴛᴇʀ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["imdb"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["imdb"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["spell_check"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["spell_check"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ ᴍꜱɢ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["welcome"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["welcome"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ',
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ',
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}')
                 ],
                 [
@@ -2774,17 +2798,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else "❌ ᴅɪꜱᴀʙʟᴇ",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else f"<emoji id=\"6271611232457855630\">❌</emoji> ᴅɪꜱᴀʙʟᴇ",
                                          callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('📡 FTM Gamma Mode',
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ Enabled" if settings.get("ftm_gamma_mode", False) else "❌ Disabled",
+                    InlineKeyboardButton(f"<emoji id=\"6280269890821558384\">✅</emoji> Enabled" if settings.get("ftm_gamma_mode", False) else f"<emoji id=\"6271611232457855630\">❌</emoji> Disabled",
                                          callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton("🛑 ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
+                    InlineKeyboardButton("<emoji id=\"6271674836628541366\">🛑</emoji> ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
                                          callback_data='close_data'
                                          )
                 ]
@@ -2802,18 +2826,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("show_option"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⚠️ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unavailable#{from_user}"),
-                InlineKeyboardButton("🟢 ᴜᴘʟᴏᴀᴅᴇᴅ 🟢", callback_data=f"uploaded#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6102938383456146362\">⚠️</emoji> ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6102938383456146362\">⚠️</emoji>", callback_data=f"unavailable#{from_user}"),
+                InlineKeyboardButton("<emoji id=\"6113685078825505075\">🟢</emoji> ᴜᴘʟᴏᴀᴅᴇᴅ <emoji id=\"6113685078825505075\">🟢</emoji>", callback_data=f"uploaded#{from_user}")
              ],[
-                InlineKeyboardButton("🔁 ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🔁", callback_data=f"already_available#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6030657343744644592\">🔁</emoji> ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6030657343744644592\">🔁</emoji>", callback_data=f"already_available#{from_user}")
              ],[
-                InlineKeyboardButton("📌 Not Released 📌", callback_data=f"Not_Released#{from_user}"),
-                InlineKeyboardButton("📝 Type Correct Spelling 📝", callback_data=f"Type_Correct_Spelling#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6100424015111787987\">📌</emoji> Not Released <emoji id=\"6100424015111787987\">📌</emoji>", callback_data=f"Not_Released#{from_user}"),
+                InlineKeyboardButton("<emoji id=\"5370546867786523009\">📝</emoji> Type Correct Spelling <emoji id=\"5370546867786523009\">📝</emoji>", callback_data=f"Type_Correct_Spelling#{from_user}")
              ],[
-                InlineKeyboardButton("⛔️ Not Available In The Hindi ⛔️", callback_data=f"Not_Available_In_The_Hindi#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5275969776668134187\">⛔️</emoji> Not Available In The Hindi <emoji id=\"5275969776668134187\">⛔️</emoji>", callback_data=f"Not_Available_In_The_Hindi#{from_user}")
              ]]
         btn2 = [[
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2826,11 +2850,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("unavailable"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⚠️ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6102938383456146362\">⚠️</emoji> ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6102938383456146362\">⚠️</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2849,11 +2873,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Not_Released"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("📌 Not Released 📌", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6100424015111787987\">📌</emoji> Not Released <emoji id=\"6100424015111787987\">📌</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2872,11 +2896,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Type_Correct_Spelling"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("📝 Type Correct Spelling 📝", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5370546867786523009\">📝</emoji> Type Correct Spelling <emoji id=\"5370546867786523009\">📝</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2895,11 +2919,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("Not_Available_In_The_Hindi"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("⛔️ Not Available In The Hindi ⛔️", callback_data=f"unalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"5275969776668134187\">⛔️</emoji> Not Available In The Hindi <emoji id=\"5275969776668134187\">⛔️</emoji>", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2918,13 +2942,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("uploaded"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("🟢 ᴜᴘʟᴏᴀᴅᴇᴅ 🟢", callback_data=f"upalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6113685078825505075\">🟢</emoji> ᴜᴘʟᴏᴀᴅᴇᴅ <emoji id=\"6113685078825505075\">🟢</emoji>", callback_data=f"upalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔎 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ <emoji id=\"5429571366384842791\">🔎</emoji>", url=GRP_LNK)
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2943,13 +2967,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data.startswith("already_available"):
         ident, from_user = query.data.split("#")
         btn = [[
-                InlineKeyboardButton("🔁 ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🔁", callback_data=f"alalert#{from_user}")
+                InlineKeyboardButton("<emoji id=\"6030657343744644592\">🔁</emoji> ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ <emoji id=\"6030657343744644592\">🔁</emoji>", callback_data=f"alalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
+                 InlineKeyboardButton("<emoji id=\"5778455936410588193\">🔗</emoji> ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("🔎 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
+                 InlineKeyboardButton("<emoji id=\"5429571366384842791\">🔎</emoji> ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ <emoji id=\"5429571366384842791\">🔎</emoji>", url=GRP_LNK)
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -3012,15 +3036,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('📺 Watch online 📺', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("<emoji id=\"6172332822892647766\">🚀</emoji> Fast Download <emoji id=\"6172332822892647766\">🚀</emoji>", url=lazy_download),
+                            InlineKeyboardButton("<emoji id=\"6044356915029348425\">📺</emoji> Watch online <emoji id=\"6044356915029348425\">📺</emoji>", url=lazy_stream)
+                        ]
+                    ]
+                )
             )
             ftmbotzx = await query.message.reply_text(
                 text="<emoji id=\"6280269890821558384\">✅</emoji> ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('📺 Watch online 📺', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton("<emoji id=\"6172332822892647766\">🚀</emoji> Fast Download <emoji id=\"6172332822892647766\">🚀</emoji>", url=lazy_download),
+                            InlineKeyboardButton("<emoji id=\"6044356915029348425\">📺</emoji> Watch online <emoji id=\"6044356915029348425\">📺</emoji>", url=lazy_stream)
+                        ]
+                    ]
+                )
             )  
 
             await asyncio.sleep(120)  # Adjust the delay as needed
@@ -3044,719 +3080,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(text=script.SELECT, show_alert=True)
 
     elif query.data == "sinfo":
-        await query.answer(text=script.SINFO, show_alert=True)
-
-    elif query.data == "start":
-        buttons = [[
-                    InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
-                ],[
-                    InlineKeyboardButton('🔎 Tᴏᴘ Sᴇᴀʀᴄʜɪɴɢ', callback_data="topsearch"),
-                    InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ 🤙', callback_data='channels')
-                ],[
-                    InlineKeyboardButton(' ʜᴇʟᴘ 🚨', callback_data='help'),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ ❓ ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('Eᴀʀɴ ᴍᴏɴᴇʏ.. 💰', callback_data="shortlink_info")
-                ]]
-
-        reply_markup = InlineKeyboardMarkup(buttons)
-        current_time = datetime.now(pytz.timezone(TIMEZONE))
-        curr_time = current_time.hour        
-        if curr_time < 12:
-            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 🌞" 
-        elif curr_time < 17:
-            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 🌓" 
-        elif curr_time < 21:
-            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 🌘"
-        else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 🌑"
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, gtxt, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        await query.answer(MSG_ALRT)
-
-    elif query.data == "channels":
-        buttons = [[
-            InlineKeyboardButton('🍿 Mᴏᴠɪᴇ Gʀᴏᴜᴘ ', url=GRP_LNK),
-            InlineKeyboardButton('📂 ʙᴀᴄᴋᴜᴘ', url=CHNL_LNK)
-        ],[
-            InlineKeyboardButton('📢 Mᴏᴠɪᴇ Nᴏᴛɪғɪᴄᴀᴛɪᴏɴ ', url=FTMBOTZX_MOVIE_UPDATE_CHANNEL_LNK),
-        ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='start'),
-            InlineKeyboardButton('💡 Cᴏɴᴛᴀᴄᴛ ', url=OWNER_LNK)
-        ]] 
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.CHANNELS.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "users":
-        buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.USERS_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "group":
-        buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.GROUP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-
-    elif query.data == "admic":
-        if query.from_user.id not in ADMINS:
-            return await query.answer("⚠️ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀ ʙᴏᴛ ᴀᴅᴍɪɴ !", show_alert=True)
-        page = 0  
-        buttons = [
-            [InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}')],
-            [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]
-        ]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=commands[page],  
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data.startswith("admic_next_"):
-        page = int(query.data.split('_')[-1]) + 1
-        if page >= len(commands):
-            page = len(commands) - 1
-
-        buttons = []
-        if page > 0:
-            buttons.append(InlineKeyboardButton('Previous ⬅️', callback_data=f'admic_prev_{page}'))
-
-        if page < len(commands) - 1:
-            buttons.append(InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}'))
-
-        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]])
-        await query.message.edit_text(
-            text=commands[page],
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data.startswith("admic_prev_"):
-        page = int(query.data.split('_')[-1]) - 1
-        if page < 0:
-            page = 0  
-
-        buttons = []
-        if page > 0:
-            buttons.append(InlineKeyboardButton('Previous ⬅️', callback_data=f'admic_prev_{page}'))
-
-        if page < len(commands) - 1:
-            buttons.append(InlineKeyboardButton('Next ➡️', callback_data=f'admic_next_{page}'))
-
-        reply_markup = InlineKeyboardMarkup([buttons, [InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')]])
-        await query.message.edit_text(
-            text=commands[page],
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-
-    elif query.data == "help":
-        buttons = [[
-            InlineKeyboardButton('🛠 Aᴅᴍɪɴ', callback_data='admic')
-        ],[
-            InlineKeyboardButton('👤 ᴜꜱᴇʀ', callback_data='users'),
-            InlineKeyboardButton('👥 ɢʀᴏᴜᴘ', callback_data='group')
-        ],[
-            InlineKeyboardButton ('🏷 sᴛɪᴄᴋᴇʀ ɪᴅ', callback_data='sticker'),
-            InlineKeyboardButton('✨ ᴛᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
-        ],[
-            InlineKeyboardButton('📝 ғᴏɴᴛ', callback_data='font'),
-            InlineKeyboardButton('✨ Jsᴏɴ', callback_data='json')
-        ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "about":
-        buttons = [[
-            InlineKeyboardButton('⚠️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ⚠️', callback_data='disclaimer'),
-            InlineKeyboardButton ('✨ sᴏᴜʀᴄᴇ', callback_data='source'),
-        ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.ABOUT_TXT.format(temp.U_NAME, temp.B_NAME, OWNER_LNK),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 📜', url='https://t.me/Hidden_Xman'),
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='about')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.SOURCE_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-
-    elif query.data == "json":
-        buttons = [[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ➡️', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="● ◌ ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ◌"
-        )
-        await query.message.edit_text(
-            text="● ● ●"
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        await query.message.edit_text(
-            text=(script.JSON_TXT),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "sticker":
-            btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="help")                    
-                  ]]
-            await client.edit_message_media(
-                query.message.chat.id, 
-                query.message.id, 
-                InputMediaPhoto(random.choice(PICS))
-            )
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text=(script.STICKER_TXT),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-        )
-    elif query.data == "tele":
-            btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="help"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url=OWNER_LNK)
-                  ]]
-            await client.edit_message_media(
-                query.message.chat.id, 
-                query.message.id, 
-                InputMediaPhoto(random.choice(PICS))
-            )
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text=(script.TELE_TXT),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "font":
-            btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="help")
-                  ]]
-            await client.edit_message_media(
-                query.message.chat.id, 
-                query.message.id, 
-                InputMediaPhoto(random.choice(PICS))
-            )
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text=(script.FONT_TXT),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-        )
-
-    elif query.data == "shortlink_info":
-            btn = [[
-                    InlineKeyboardButton("1 / 3", callback_data="pagesn1"),
-                    InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="shortlink_info2")
-                    ],[
-                    InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
-                    ]]
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text=(script.SHORTLINK_INFO),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-            )   
-    elif query.data == "shortlink_info2":
-            btn = [[
-            InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="shortlink_info"),
-            InlineKeyboardButton("2 / 3", callback_data="pagesn1"),
-            InlineKeyboardButton("ɴᴇxᴛ ➡️", callback_data="shortlink_info3")
-            ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
-            ]]
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text=(script.SHORTLINK_INFO2),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-            )
-    elif query.data == "shortlink_info3":
-            btn = [[
-            InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="shortlink_info2"),
-            InlineKeyboardButton("3 / 3", callback_data="pagesn1")
-            ],[
-            InlineKeyboardButton('⬅️ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ➡️', callback_data='start')
-            ]]
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text=(script.SHORTLINK_INFO3),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML
-            )   
-
-    elif query.data == "disclaimer":
-            btn = [[
-                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ ➡️", callback_data="about")
-                  ]]
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_text(
-                text=(script.DISCLAIMER_TXT),
-                reply_markup=reply_markup,
-                parse_mode=enums.ParseMode.HTML 
-            )
-    elif query.data.startswith("setgs"):
-        ident, set_type, status, grp_id = query.data.split("#")
-        grpid = await active_connection(str(query.from_user.id))
-
-        if str(grp_id) != str(grpid):
-            await query.message.edit("Yᴏᴜʀ Aᴄᴛɪᴠᴇ Cᴏɴɴᴇᴄᴛɪᴏɴ Hᴀs Bᴇᴇɴ Cʜᴀɴɢᴇᴅ. Gᴏ Tᴏ /connections ᴀɴᴅ ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴄᴏɴɴᴇᴄᴛɪᴏɴ.")
-            return await query.answer(MSG_ALRT)
-
-        if set_type == 'is_shortlink' and query.from_user.id not in ADMINS:
-            return await query.answer(text=f"Hey {query.from_user.first_name}, You can't change shortlink settings for your group !\n\nIt's an admin only setting !", show_alert=True)
-
-        if status == "True":
-            await save_group_settings(grpid, set_type, False)
-        else:
-            await save_group_settings(grpid, set_type, True)
-
-        settings = await get_settings(grpid)
-
-        if settings is not None:
-            buttons = [
-                [
-                    InlineKeyboardButton('ʀᴇꜱᴜʟᴛ ᴘᴀɢᴇ',
-                                         callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ʙᴜᴛᴛᴏɴ" if settings["button"] else "❌ ᴛᴇxᴛ",
-                                         callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ꜱᴛᴀʀᴛ" if settings["botpm"] else "❌ ᴀᴜᴛᴏ",
-                                         callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
-                                         callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["file_secure"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ɪᴍᴅʙ ᴘᴏꜱᴛᴇʀ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["imdb"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',
-                                         callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["spell_check"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ ᴍꜱɢ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["welcome"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ',
-                                         callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ',
-                                         callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ᴍᴀx ʙᴜᴛᴛᴏɴꜱ',
-                                         callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('10' if settings["max_btn"] else f'{MAX_B_TN}',
-                                         callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('📡 FTM Gamma Mode',
-                                         callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ Enabled" if settings.get("ftm_gamma_mode", False) else "❌ Disabled",
-                                         callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton("🛑 ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
-                                         callback_data='close_data'
-                                         )
-                ]
-            ]
-            reply_markup = InlineKeyboardMarkup(buttons)
-            await query.message.edit_text(
-                text=f"<b>ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ {title} ᴀꜱ ʏᴏᴜ ᴡɪꜱʜ <emoji id=\"5350396951407895212\">⚙️</emoji></b>",
-                disable_web_page_preview=True,
-                parse_mode=enums.ParseMode.HTML
-            )
-            await query.message.edit_reply_markup(reply_markup)
-
-    elif query.data.startswith("opnsetpm"):
-        ident, grp_id = query.data.split("#")
-        userid = query.from_user.id if query.from_user else None
-        st = await client.get_chat_member(grp_id, userid)
-        if (
-                st.status != enums.ChatMemberStatus.ADMINISTRATOR
-                and st.status != enums.ChatMemberStatus.OWNER
-                and str(userid) not in ADMINS
-        ):
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-            return
-        title = query.message.chat.title
-        settings = await get_settings(grp_id)
-        btn2 = [[
-                 InlineKeyboardButton("💬 ᴄʜᴇᴄᴋ ᴍʏ ᴅᴍ", url=f"telegram.me/{temp.U_NAME}")
-               ]]
-        reply_markup = InlineKeyboardMarkup(btn2)
-        await query.message.edit_text(f"<b>ʏᴏᴜʀ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ ғᴏʀ {title} ʜᴀs ʙᴇᴇɴ sᴇɴᴛ ᴛᴏ ʏᴏᴜ ʙʏ ᴅᴍ.</b>")
-        await query.message.edit_reply_markup(reply_markup)
-        if settings is not None:
-            buttons = [
-                [
-                    InlineKeyboardButton('ʀᴇꜱᴜʟᴛ ᴘᴀɢᴇ',
-                                         callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ʙᴜᴛᴛᴏɴ" if settings["button"] else "❌ ᴛᴇxᴛ",
-                                         callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ꜱᴛᴀʀᴛ" if settings["botpm"] else "❌ ᴀᴜᴛᴏ",
-                                         callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
-                                         callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["file_secure"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ɪᴍᴅʙ ᴘᴏꜱᴛᴇʀ', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["imdb"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜱᴘᴇʟʟ ᴄʜᴇᴄᴋ',
-                                         callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["spell_check"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ᴡᴇʟᴄᴏᴍᴇ ᴍꜱɢ', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["welcome"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ',
-                                         callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_delete"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#auto_delete#{settings["auto_delete"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ',
-                                         callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["auto_ffilter"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#auto_ffilter#{settings["auto_ffilter"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ᴍᴀx ʙᴜᴛᴛᴏɴꜱ',
-                                         callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('10' if settings["max_btn"] else f'{MAX_B_TN}',
-                                         callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ ᴇɴᴀʙʟᴇ" if settings["is_shortlink"] else "❌ ᴅɪꜱᴀʙʟᴇ",
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('📡 FTM Gamma Mode',
-                                         callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}'),
-                    InlineKeyboardButton("✅ Enabled" if settings.get("ftm_gamma_mode", False) else "❌ Disabled",
-                                         callback_data=f'setgs#ftm_gamma_mode#{settings.get("ftm_gamma_mode", False)}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton("🛑 ᴄʟᴏsᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ", 
-                                         callback_data='close_data'
-                                         )
-                ]
-            ]
-            reply_markup = InlineKeyboardMarkup(buttons)
-            await client.send_message(
-                chat_id=userid,
-                text=f"<b>ᴄʜᴀɴɢᴇ ʏᴏᴜʀ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ {title} ᴀꜱ ʏᴏᴜ ᴡɪꜱʜ <emoji id=\"5350396951407895212\">⚙️</emoji></b>",
-                reply_markup=reply_markup,
-                disable_web_page_preview=True,
-                parse_mode=enums.ParseMode.HTML,
-                reply_to_message_id=query.message.id
-            )
-
-    elif query.data.startswith("show_option"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("⚠️ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unavailable#{from_user}"),
-                InlineKeyboardButton("🟢 ᴜᴘʟᴏᴀᴅᴇᴅ 🟢", callback_data=f"uploaded#{from_user}")
-             ],[
-                InlineKeyboardButton("🔁 ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🔁", callback_data=f"already_available#{from_user}")
-             ],[
-                InlineKeyboardButton("📌 Not Released 📌", callback_data=f"Not_Released#{from_user}"),
-                InlineKeyboardButton("📝 Type Correct Spelling 📝", callback_data=f"Type_Correct_Spelling#{from_user}")
-             ],[
-                InlineKeyboardButton("⛔️ Not Available In The Hindi ⛔️", callback_data=f"Not_Available_In_The_Hindi#{from_user}")
-             ]]
-        btn2 = [[
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Hᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ᴏᴘᴛɪᴏɴs !")
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("unavailable"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("⚠️ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Uɴᴀᴠᴀɪʟᴀʙʟᴇ !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, Sᴏʀʀʏ Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ɪs ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ. Sᴏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ɪᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, Sᴏʀʀʏ Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ɪs ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ. Sᴏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ɪᴛ.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("Not_Released"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("📌 Not Released 📌", callback_data=f"unalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Uɴᴀᴠᴀɪʟᴀʙʟᴇ !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, The movie you requested has not been released yet. Sᴏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ɪᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, The movie you requested has not been released yet. Sᴏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ɪᴛ.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("Type_Correct_Spelling"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("📝 Type Correct Spelling 📝", callback_data=f"unalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Type Correct Spelling !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, The spelling of the movie you requested is incorrect. Please type the correct spelling of the movie name and try again.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, The spelling of the movie you requested is incorrect. Please type the correct spelling of the movie name and try again.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("Not_Available_In_The_Hindi"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("⛔️ Not Available In The Hindi ⛔️", callback_data=f"unalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Not Available In The Hindi  !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, Your request is not available in the Hindi language. Sᴏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ɪᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, Your request is not available in the Hindi language. Sᴏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴄᴀɴ'ᴛ ᴜᴘʟᴏᴀᴅ ɪᴛ.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("uploaded"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("🟢 ᴜᴘʟᴏᴀᴅᴇᴅ 🟢", callback_data=f"upalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
-               ],[
-                 InlineKeyboardButton("🔎 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Uᴘʟᴏᴀᴅᴇᴅ !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ʜᴀs ʙᴇᴇɴ ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs. Kɪɴᴅʟʏ sᴇᴀʀᴄʜ ɪɴ ᴏᴜʀ Gʀᴏᴜᴘ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ʜᴀs ʙᴇᴇɴ ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs. Kɪɴᴅʟʏ sᴇᴀʀᴄʜ ɪɴ ᴏᴜʀ Gʀᴏᴜᴘ.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("already_available"):
-        ident, from_user = query.data.split("#")
-        btn = [[
-                InlineKeyboardButton("🔁 ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ 🔁", callback_data=f"alalert#{from_user}")
-              ]]
-        btn2 = [[
-                 InlineKeyboardButton("🔗 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=link.invite_link),
-                 InlineKeyboardButton("🔎 ᴠɪᴇᴡ ꜱᴛᴀᴛᴜꜱ", url=f"{query.message.link}")
-               ],[
-                 InlineKeyboardButton("🔎 ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ 🔎", url=GRP_LNK)
-               ]]
-        if query.from_user.id in ADMINS:
-            user = await client.get_users(from_user)
-            reply_markup = InlineKeyboardMarkup(btn)
-            content = query.message.text
-            await query.message.edit_text(f"<b><strike>{content}</strike></b>")
-            await query.message.edit_reply_markup(reply_markup)
-            await query.answer("Sᴇᴛ ᴛᴏ Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ !")
-            try:
-                await client.send_message(chat_id=int(from_user), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴏᴜʀ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ. Kɪɴᴅʟʏ sᴇᴀʀᴄʜ ɪɴ ᴏᴜʀ Gʀᴏᴜᴘ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-            except UserIsBlocked:
-                await client.send_message(chat_id=int(SUPPORT_CHAT_ID), text=f"<u>{content}</u>\n\n<b>Hᴇʏ {user.mention}, Yᴏᴜʀ ʀᴇᴏ̨ᴜᴇsᴛ ɪs ᴀʟʀᴇᴀᴅʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴏᴜʀ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ. Kɪɴᴅʟʏ sᴇᴀʀᴄʜ ɪɴ ᴏᴜʀ Gʀᴏᴜᴘ.\n\nNᴏᴛᴇ: Tʜɪs ᴍᴇssᴀɢᴇ ɪs sᴇɴᴛ ᴛᴏ ᴛʜɪs ɢʀᴏᴜᴘ ʙᴇᴄᴀᴜsᴇ ʏᴏᴜ'ᴠᴇ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ. Tᴏ sᴇɴᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ ʏᴏᴜʀ PM, Mᴜsᴛ ᴜɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ.</b>", reply_markup=InlineKeyboardMarkup(btn2))
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("alalert"):
-        ident, from_user = query.data.split("#")
-        if int(query.from_user.id) == int(from_user):
-            user = await client.get_users(from_user)
-            await query.answer(f"Hᴇʏ {user.first_name}, Yᴏᴜʀ Rᴇᴏ̨ᴜᴇsᴛ ɪs Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ !", show_alert=True)
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("upalert"):
-        ident, from_user = query.data.split("#")
-        if int(query.from_user.id) == int(from_user):
-            user = await client.get_users(from_user)
-            await query.answer(f"Hᴇʏ {user.first_name}, Yᴏᴜʀ Rᴇᴏ̨ᴜᴇsᴛ ɪs Uᴘʟᴏᴀᴅᴇᴅ !", show_alert=True)
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-    elif query.data.startswith("unalert"):
-        ident, from_user = query.data.split("#")
-        if int(query.from_user.id) == int(from_user):
-            user = await client.get_users(from_user)
-            await query.answer(f"Hᴇʏ {user.first_name}, Yᴏᴜʀ Rᴇᴏ̨ᴜᴇsᴛ ɪs Uɴᴀᴠᴀɪʟᴀʙʟᴇ !", show_alert=True)
-        else:
-            await query.answer("Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ sᴜғғɪᴄɪᴀɴᴛ ʀɪɢʜᴛs ᴛᴏ ᴅᴏ ᴛʜɪs !", show_alert=True)
-
-
-    elif lazyData.startswith("generate_stream_link"):
-        _, file_id = lazyData.split(":")
-        try:
-            user_id = query.from_user.id
-            username =  query.from_user.mention 
-
-            log_msg = await client.send_cached_media(
-                chat_id=LOG_CHANNEL,
-                file_id=file_id,
-            )
-            fileName = {quote_plus(get_name(log_msg))}
-            lazy_stream = f"{URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-            lazy_download = f"{URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-
-            xo = await query.message.reply_text(f'<emoji id="6127558265573218459">💘</emoji>')
-            await asyncio.sleep(1)
-            await xo.delete()
-
-            await log_msg.reply_text(
-                text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\n•• ᖴᎥᒪᗴ Nᗩᗰᗴ : {fileName}",
-                quote=True,
-                disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkupSorry, something went wrong. Please try your request again.
+        await query.answer(text=script.SSorry, something went wrong. Please try your request again.
