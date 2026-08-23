@@ -1,5 +1,4 @@
-
-# bot dependencies 
+# Bot Dependencies 
 pyrofork==2.3.45            
 tgcrypto       
 pymongo[srv]==4.5.0        
@@ -7,13 +6,11 @@ motor==3.3.2
 marshmallow==3.20.1         
 umongo==3.1.0              
 requests       
-bs4    
+beautifulsoup4  
 git+https://github.com/Joelkb/cinemagoer 
 shortzy          
-datetime                 
 pytz            
-aiohttp       
-
+aiohttp        
 
 # Master tools
 PyLeaves==1.0.2
@@ -22,18 +19,18 @@ Wikipedia
 # Other tools
 opencv-python-headless==4.8.1.78
 python-dotenv==0.21.1
-speedtest==0.0.1
+speedtest-cli
 humanize==4.6.0
 psutil==5.9.4
 numpy
 wheel
 ujson
 wget
-pytz
 aiofiles
 dnspython==2.3.0
 python-decouple
 ffmpeg-python>=0.2.0
+Pillow
 
 # Jinja and Scheduler
 jinja2
@@ -41,7 +38,6 @@ apscheduler
 pyshorteners
 pyromod
 colorama
-
 
 # Text Matching Tools
 fuzzywuzzy
@@ -51,10 +47,3 @@ python-Levenshtein
 googletrans==3.1.0a0
 telegraph==2.2.0
 gTTS==2.3.1
-
-
-beautifulsoup4
-cinemagoer
-pyrogram
-Pillow
-Pillow
