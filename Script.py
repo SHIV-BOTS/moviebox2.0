@@ -5,9 +5,9 @@ class script(object):
         "https://radare.arzfun.com/api/tg/file?id=BAACAgUAAxkBAAEMsPNqV_Zr0LC9pwmtzWakOIchnXuIdQACiyAAAj56wVbxBM2QDTx3Fz0E&name=ENBUTHB6dnrNmQdH3dLRWe.mp4&header=video/mp4"
     ]
 
-    START_TXT = """<b> ʜᴇʏ {}, {}\n\nɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴏᴠɪᴇ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ !! <emoji id="6190651601439428976">😍</emoji>\n<blockquote><emoji id="6125239923831217642">✨</emoji> ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Lord_Devid">🌙. 𝐷𝜀𝜈𝜄𝑑 𓂃 ⋆💸˚</a></blockquote></b>"""
+    START_TXT = """<b> ʜᴇʏ {}, {}\n\nɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴏᴠɪᴇ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ !! <emoji id="6190651601439428976">😍</emoji>\n<blockquote><emoji id="6125239923831217642">✨</emoji> ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/sukoon_s">THE SHIV</a></blockquote></b>"""
 
-    GSTART_TXT = """<b> ʜᴇʏ {}, {}\n\nɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴏᴠɪᴇ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ !! <emoji id="6190651601439428976">😍</emoji>\n<blockquote><emoji id="6125239923831217642">✨</emoji> ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Lord_Devid">🌙. 𝐷𝜀𝜈𝜄𝑑 𓂃 ⋆💸˚</a></blockquote></b>"""
+    GSTART_TXT = """<b> ʜᴇʏ {}, {}\n\nɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴍᴏᴠɪᴇ ʙᴏᴛ. ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ !! <emoji id="6190651601439428976">😍</emoji>\n<blockquote><emoji id="6125239923831217642">✨</emoji> ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/sukoon_s">THE SHIV</a></blockquote></b>"""
 
     HELP_TXT = """<b>ʜᴇʏ {},
 
@@ -16,7 +16,7 @@ class script(object):
 
     ABOUT_TXT = """<b>╭────[ ᴍʏ ᴅᴇᴛᴀɪʟs ]────⍟
 ├<emoji id="6125239923831217642">✨</emoji> Mʏ Nᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
-├<emoji id="5258011929993026890">👤</emoji> ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/Lord_Devid'>🌙. 𝐷𝜀𝜈𝜄𝑑 𓂃 ⋆💸˚</a> 
+├<emoji id="5258011929993026890">👤</emoji> ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/sukoon_s'>THE SHIV</a> 
 ├<emoji id="5350396951407895212">⚙️</emoji> Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢʀᴀᴍ</a>
 ├<emoji id="6100219531718824091">📱</emoji> Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/download/releases/3.0/'>ᴘʏᴛʜᴏɴ 𝟹</a> 
 ├<emoji id="5258514780469075716">📂</emoji> Dᴀᴛᴀʙᴀsᴇ : <a href='https://www.mongodb.com/'>ᴍᴏɴɢᴏ ᴅʙ</a> 
@@ -270,7 +270,7 @@ Nᴀᴍᴇ : {}
 
 Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
 
-    CAPTION = """<b><a href="https://t.me/Lord_Devid">{file_name}</a></b>\n\n<b><emoji id="6172370910662628916">👑</emoji> Powered By : <a href=https://t.me/Lord_Devid>[🌙. 𝐷𝜀𝜈𝜄𝑑 𓂃 ⋆💸˚]</a></b>"""
+    CAPTION = """<b><a href="https://t.me/sukoon_s">{file_name}</a></b>\n\n<b><emoji id="6172370910662628916">👑</emoji> Powered By : <a href=https://t.me/sukoon_s>[THE SHIV]</a></b>"""
 
     IMDB_TEMPLATE_TXT = """
 <b><emoji id="6260059243605398502">🏷</emoji> Title</b>: <a href={url}>{title}</a>
@@ -298,7 +298,7 @@ BOT WORKING PROPERLY"""
 
     SOURCE_TXT ="""<b>ՏOᑌᖇᑕᗴ ᑕOᗪᗴ : 👇 </b>
 
- ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ <emoji id="6125239923831217642">✨</emoji>› : <a href='https://t.me/TuneBots/'>🌙. 𝐷𝜀𝜈𝜄𝑑 𓂃 ⋆💸˚</a>\n """
+ ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ <emoji id="6125239923831217642">✨</emoji>› : <a href='https://t.me/TuneBots/'>THE SHIV</a>\n """
 
     EXTRAF_TXT =""" <b> ʜᴇʀᴇ ɪꜱ ᴍʏ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ </b>"""
 
