@@ -52,7 +52,7 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1001
 
 MAGIC_FORCE_SUB = {
     -1001957497326: "normal",
-    -1004432738931: "request"
+    -1004432738931: "normal"
 }
 
 
