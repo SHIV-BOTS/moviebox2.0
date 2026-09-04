@@ -59,8 +59,8 @@ MAGIC_FORCE_SUB = {
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://movieboxpremium:tumchutiyaho@moviebox.hgoqntp.mongodb.net/?appName=moviebox")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://movieboxpremium:tumchutiyaho@moviebox.hgoqntp.mongodb.net/?appName=moviebox")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://preetdealbot5_db_user:movie2anjali@cluster22.ckn2tra.mongodb.net/?appName=Cluster22")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://preetdealbot5_db_user:movie2anjali@cluster22.ckn2tra.mongodb.net/?appName=Cluster22")
 DATABASE_NAME = environ.get('DATABASE_NAME', "shiv")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'meher')
 
