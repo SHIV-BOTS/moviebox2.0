@@ -29,7 +29,7 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 PICS = (environ.get('PICS', 'https://h.uguu.se/hwzXceXP.jpg')).split()
-DEFAULT_PIC = environ.get('DEFAULT_PIC', 'https://image.zaw-myo.workers.dev/image/6b03fcba-9907-46d3-a322-9fc77b6f3592')
+DEFAULT_PIC = environ.get('DEFAULT_PIC', 'https://image.zaw-myo.workers.dev/image/ce01a504-28ce-4b56-8055-275837d7010e')
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/60e8a622b14796e4448ce.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/13702ae26fb05df52667c.jpg")
