@@ -28,7 +28,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '8417848620:AAFPbucH9eO_mVU6IHiVS8RwXoi96hA
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://n.uguu.se/hgnbxSog.jpg')).split()
+PICS = (environ.get('PICS', 'https://h.uguu.se/hwzXceXP.jpg')).split()
 DEFAULT_PIC = environ.get('DEFAULT_PIC', 'https://image.zaw-myo.workers.dev/image/6b03fcba-9907-46d3-a322-9fc77b6f3592')
 NOR_IMG = environ.get("NOR_IMG", "https://graph.org/file/e20b5fdaf217252964202.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/60e8a622b14796e4448ce.mp4")
